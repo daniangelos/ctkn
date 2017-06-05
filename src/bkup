@@ -1,0 +1,51 @@
+    for(minaux=agaux->litmin; minaux!=NULL; minaux=minaux->hmin.next)
+        for(maxaux=minaux->litmax; maxaux!=NULL; maxaux=maxaux->hmax.next)
+            for(idaux=maxaux->branches; idaux!=NULL; idaux=idaux->hid.next){
+                branch = idaux->branch;
+                literals = clause->right;
+                while(literals->next != NULL){
+                    literalslist *provlist = NULL;
+                    copy_literals(&provlist, branch->literals);
+                    if(add_literal(literals->literal, &provlist) < 0)
+                        delete_literalslist(&provlist);
+                    else{
+                        //add branch to hash
+                        tbranch *newbranch = create_branch(modal_level, agent);
+                        newbranch->literals = provlist;
+                        if(literals->literal > branch->litmax){
+                            newbranch->litmax = literals->literal;
+                        }
+                        else newbranch->litmax = branch->litmax;
+                        if(literals->literal < branch->litmin){
+                            newbranch->litmin = literals->literal;
+                        }
+                        else newbranch->litmin = branch->litmin;
+                        /*add_branch(newbranch);*/
+                        add_brancheslist(newbranch, &add);
+                    }
+                    literals = literals->next;
+                }
+                if(add_literal(literals->literal, &branch->literals) < 0)
+                    delete_branch(&branch);
+                else{
+                    if(literals->literal > branch->litmax){
+                        delete_branch_hash(branch);
+                        /*add_branch(branch);*/
+                        branch->litmax = literals->literal;
+                        add_brancheslist(branch, &add);
+                    }
+                    if(literals->literal < branch->litmin){
+                        delete_branch_hash(branch);
+                        /*add_branch(branch);*/
+                        branch->litmin = literals->literal;
+                        add_brancheslist(branch, &add);
+                    }
+                    break;
+                }
+            }
+
+    brancheslist *aux = add;
+    while(aux != NULL){
+        add_branch(aux->branch);
+        aux = aux->next;
+    }

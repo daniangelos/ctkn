@@ -1,0 +1,53 @@
+
+duplicate_worlds(*branch);
+baux = *branch;
+for(i = 0; i < total_branches/2; i++) {
+    baux->dead = add_literal(-(clause->left), &baux->world->literals);
+    baux = baux->next;
+}
+for(i = total_branches/2; i<total_branches; i++) {
+    [>mliterals = clause->right;<]
+    copy_literals(&mliterals, clause->right);
+    baux->dead = add_literal(clause->left, &mliterals);
+    [>baux->world->literals = mliterals;<]
+    baux->dead = add_literalslist(&(baux->world->literals), mliterals);
+    if(type == MPOSITIVE) 
+        add_mliteral(clause->agent, clause->right, &(baux->world->positives));
+    else
+        add_mliteral(clause->agent, clause->right, &(baux->world->negatives));
+    baux = baux->next;
+}
+   
+void duplicate_worlds(branch_t* branch) {
+	branch_t* aux;
+	branch_t* copy;
+	int i;
+	/*int count = 0;*/
+
+	aux = branch;
+	copy = branch;
+
+	i=0;
+	while(aux->next!= NULL) {i++; aux = aux->next;}
+	printf("total branches: %d\n", ++i);
+	for(i=0; i<total_branches; i++) {
+		aux->next = malloc(sizeof(branch_t));
+		aux = aux->next;
+		aux->id = id_branch++;
+		aux->dead = 0;
+		aux->world = malloc(sizeof(world_t));
+		aux->world->id = id_world++;
+		aux->world->modal_level = copy->world->modal_level;
+		aux->world->literals = NULL;
+		aux->world->relation = NULL;
+		aux->world->positives = aux->world->negatives = NULL;
+		copy_world(aux->world, copy->world);
+		copy = copy->next;
+	}
+	aux->next = NULL;
+	total_branches*=2;
+//	i=0;
+//	aux = branch;
+//	while(aux->next!= NULL) {i++; aux = aux->next;}
+//	printf("total branches: %d\n", ++i);
+}

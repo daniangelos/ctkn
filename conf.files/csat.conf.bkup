@@ -1,0 +1,17 @@
+//set(parallel).
+//set(positive).
+//set(oldest).
+//set(ires).
+set(shortest).
+set(unit).
+set(ple).
+//set(mlple).
+set(forward).
+//set(backward).
+set(local).
+//set(modal_negative).
+//set(antiprenex).
+set(maxproof,1).
+//set(print_proof).
+//set(print_generated).
+//set(print_deleted).

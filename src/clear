@@ -1,0 +1,8 @@
+
+void add_negativeagents(pair_t* negatives, int ml, branch_t* prev_level, tableaux_t** tableaux){
+
+    if(negatives == NULL) return;
+    if(*tableaux == NULL) return;
+    literalslist* l_neg;
+
+    
