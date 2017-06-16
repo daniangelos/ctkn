@@ -1,0 +1,171 @@
+KSP - Copyright (c) (2015) Cláudia Nalon
+
+1. RUNNING KSP
+
+Usage: ./ksp [options] [-i file | -f "formula"]
+
+Options:
+
+Prover modes: KSP performs either local (-l option) or global (-g option) reasoning. The default is global reasoning.
+
+Input modes: the input is read from either a file (-i option) or from the command line (-f option). A configuration file can also be given, using the option -c file. Options given at the command line override those in the configuration file.
+
+Verbose modes: there are several levels of verbosity. If you do not specify the verbosity, then the prover runs quietly and prints if the input is satisfiable or unsatisfiable. Each level of verbosity adds the following:
+
+-v 1: prints short statistics about the running.
+-v 2: prints the phases of a particular run.
+-v 3: prints statistics for each phase.
+-v 4: prints the sets of clauses at the end of each phase.
+-v 5: prints the symbol table at the end of each phase.
+-v 6: prints the syntactic trees at the end of each phase.
+
+Aditionnaly, the following options can be used to control the output:
+
+-pgen: prints the generated clauses
+-pdel: prints the clauses being deleted
+-pproof: prints all the proof(s) at the end of a run.
+
+The number of proofs is controlled by the following flag:
+
+-maxproof n, where n is an integer
+
+The default is 1.
+
+Literal selection: the following options are available:
+
+-sat: saturation
+-ord: ordered resolution
+-neg: negative resolution
+-pos: positive resolution
+
+The default is sat.
+
+Clause selection: the following options are available:
+
+-short: chooses the shortest clause.
+-old: chooses the oldest clause.
+-new: chooses the newest clause.
+-greatest: chooses the clause with the highest maximal literal in the clause set.
+-smallest: chooses the clause with the lowest maximal literal in the clause set.
+
+The default is short.
+
+Modal level selection: these options control how the levels are scanned.
+
+-ordlevel_ascend: ascending order of modal levels, that is, from ml = 0 to the maximal modal level. 
+-ordlevel_descend: the modal levels are scanned from the maximal modal level down to ml = 0. 
+-ordlevel_shuffle, the list of modal levels is partitioned in half and the two lists are merged, just before entering the inner loop; the modal levels are then scanned in the resulting order.
+
+The default is none.
+
+Redundancy elimination: by default, the prover only performs tautology elimination and repetition check within the sos. The following options can also be used:
+
+-ple: global pure literal elimination, which is applied after transformation into clausal form.
+-mlple: modal level pure literal elimination by modal level, which is applied after the transformation into clausal form.
+-early_ple: performs global pure literal elimination prior to the transformation into the normal form.
+-early_mlple: performs modal level pure literal elimination prior to the transformation into the normal form.
+-mle: 
+-satmle: if no resolution step can be further applied to a particular modal level and a contradiction was not found at that modal level, then the set of modal clauses is satisfiable. This option removes the modal levels where this situation occurs.
+
+-full_check_repeated: checks if the generated clause is in the usable.
+
+-fsub: performs forward subsumption of the chosen clause against those in the usable set.
+-bsub: performs backward subsumption of the chosen clause against those in the usable set.
+-sos_sub: also performs subsumption against clauses in the sos.
+
+
+Normal forms and their preprocessing: by default, the prover generates the SNF of the input, using normal renaming (i.e. a la Teitsin: one new variable for each subformula being renamed). Other options are also available:
+
+-cnf: it uses the distribution rule, instead of renaming conjunctions that occur in disjunctions.
+-small_cnf: it does renaming only when there is some benefit; otherwise applies distribution in order to generate the normal form.
+
+-normal_renaming: one new variable for each subformula being renamed.
+-limited_reuse_renaming: one new variable for all occurrences of each subformula being renamed.
+-extensive_reuse_renaming: one new variable for all occurrences of each subformula being renamed; also, if a formula "phi" was renamed by a new variable "p", then the NNF of "not phi" is renamed by "not p".
+-conjunct_renaming: it renames modal subformulae that occurs in conjunctions.
+
+-snf+: renames negative literals in the scope of modal operators by positive literals. Completeness of negative resolution depends on setting this option.
+-snf-: renames positive literals in the scope of modal operators by negative literals. Completeness of positive resolution depends on setting this option.
+-snf++: renames all literals in the scope of modal operators by positive literals. Completeness of negative ordered resolution depends on setting this option.
+-snf--: renames all literals in the scope of modal operators by negative literals. Completeness of positive ordered resolution depends on setting this option.
+
+-aprenex: produces the antiprenex normal form of the input (i.e. it moves modal operators inwards).
+-prenex: produces the antiprenex normal form of the input (i.e. it moves modal operators outwards).
+
+-nnfsimp: it performs simplification over the NNF of the input. Note that this is not default.
+-bnfsimp: it performs simplification over the BNF of the input. If this option is set, then nnfsimp is also performed.
+
+Populating the usable: the prover can automatically populate the usable by selecting specific sets of clauses. Note that this is done after the preprocessing of clauses. By default, the usable is not populated.
+
+-populate_non_negative: moves all non-negative literal clauses to the usable.
+-populate_non_positive: moves all non-positive literal clauses to the usable.
+-populate_negative: moves all negative literal clauses to the usable.
+-populate_positive: moves all positive literal clauses to the usable.
+-populate_max_lit_negative: moves all clauses whose maximal literal is negative to the usable.
+-populate_max_lit_positive: moves all clauses whose maximal literal is positive to the usable.
+
+Controlling the execution: the following options finish the execution of the prover at earlier stages:
+
+-ppi_only: stops just after processing the input.
+-snf_only: stops just after generating the clause sets.
+-snf_plus_only: stops after extending the clause sets by a chosen normal form.
+-pp_only: stops just after preprocessing the clauses, i.e. before entering the main loop.
+
+Inference Rules: besides the inference rules given in [1], the following inference rules are also implemented:
+
+-ires: implements initial resolution. If both -ires and -g (global) are set, the prover simulates the calculus given in [2].
+-unit: unit resolution is applied to literal clauses and to the right-hand side of modal clauses.
+-lhs_unit: unit resolution is applied to the left-hand side of modal clauses.
+-mres: this inference rule can only be applied if the clauses are in SNF. However, if this option is set, the inference rules is applied to the modal clauses priot to their transformation in an extended normal form (snf+, snf++, etc.).
+-gen2: this inference rule can only be applied if the clauses are in SNF. However, if this option is set, the inference rules is applied to the modal clauses priot to their transformation in an extended normal form (snf+, snf++, etc.).
+-propdia: this is a propagation rule for negative modal clauses. It can only be applied if there is exactly one of such clauses in a given modal level (otherwise, this is not sound).
+
+2 - SYNTAX and EXAMPLES
+
+Syntax is not case sensitive ("p" and "P" are regarded as the same symbol). The following table gives the symbols that can be used for each operator:
+
+PROPOSITIONAL SYMBOLS: an alfanumeric sequence starting with a letter: p, p1, p_1 (underscore should not be used at the beginning of a name)
+CONSTANTS: true, false
+NOT: -, ~, not
+AND: &, and
+OR: |, or
+IMPLICATION: ->, =>, then
+ONLY IF: <-, <=
+DOUBLE IMPLICATION: <->, <=>, ifonlyif
+BOX: box index, [index]
+DIAMOND: dia index, <index>
+
+The indexes are alfanumeric sequences starting with a letter or numbers, and are optional.
+
+Some examples:
+
+./ksp -fsub -f "~(box p & box q -> box (p & q))"
+
+produces as output "Unsatisfiable". If you want to see the proof, try:
+
+./ksp -fsub -f "~([] p & [] q -> [] (p & q))" -pproof
+
+The following, using global reasoning:
+
+./ksp -fsub -f "~(p & box q -> box (p & q))" -pproof -g
+
+produces "Unsatisfiable". But, with the local option,
+
+./ksp -fsub -f "~(p & box q -> box (p & q))" -pgen -l
+
+we obtain that the formula is satisfiable.
+
+Some configuration and example files are provided with the prover. See the examples and the conf.files directories. One example of usage:
+
+./ksp -c conf.files/cord.conf -i examples/ex7.p.in.ksp -pproof
+
+shows the proof that "~(box ((box dia (p & q)) & (p & box q)) -> box (box dia (p & q)))" is unsatisfiable. The cord.conf file contains the usual configuration options for ordered resolution. The file all.conf contains all options for the prover.
+
+3 - REFERENCES
+
+[1] Nalon, C., Hustadt, U., and Dixon, C. A Modal-Layered Resolution Calculus for K. In Proceedings of Automated Reasoning with Analytic Tableaux and Related Methods - 24th International Conference, TABLEAUX 2015, Wroclaw, Poland, September 21-24, 2015. de Nivelle, H. (editor). Lecture Notes in Computer Science, 9323, pages 185--200. Springer, 2015. DOI: 10.1007/978-3-319-24312-2_13
+
+
+[2] Nalon, C. and Dixon, C. Clausal Resolution for Normal Modal Logics. Journal of Algorithms, Volume 62, Issues 3-4, July-October 2007, Pages 117-134.
+
+

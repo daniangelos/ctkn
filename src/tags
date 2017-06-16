@@ -1,0 +1,1442 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ABS	snf++.c	11;"	d	file:
+ABS_LESS	snf++.c	12;"	d	file:
+ASCENDING	prover.h	17;"	d
+AXIOM	prover.h	51;"	d
+BACKSUBSUMED	prover.h	80;"	d
+BEGIN	lex.yy.c	125;"	d	file:
+BISON	Makefile	/^BISON=bison$/;"	m
+BISONFLAGS	Makefile	/^BISONFLAGS=-v$/;"	m
+BL_COMMENT	lex.yy.c	685;"	d	file:
+BOX	prover.h	40;"	d
+BOXFALSE	prover.h	106;"	d
+CC	Makefile	/^CC=gcc$/;"	m
+CFALSE	prover.h	61;"	d
+CFLAGS	Makefile	/^CFLAGS=-O3 -lpthread$/;"	m
+CONJUNCTION	prover.h	43;"	d
+CONSTANT	prover.h	47;"	d
+CSTART	prover.h	59;"	d
+CTRUE	prover.h	60;"	d
+DECLTYPE	uthash.h	39;"	d
+DECLTYPE	uthash.h	42;"	d
+DECLTYPE	uthash.h	46;"	d
+DECLTYPE	uthash.h	48;"	d
+DECLTYPE_ASSIGN	uthash.h	52;"	d
+DECLTYPE_ASSIGN	uthash.h	58;"	d
+DEFINITION	prover.h	55;"	d
+DESCENDING	prover.h	18;"	d
+DIAMOND	prover.h	41;"	d
+DISJUNCTION	prover.h	44;"	d
+DOUBLEIMP	prover.h	46;"	d
+ECHO	lex.yy.c	786;"	d	file:
+ELMT_FROM_HH	uthash.h	110;"	d
+EOB_ACT_CONTINUE_SCAN	lex.yy.c	173;"	d	file:
+EOB_ACT_END_OF_FILE	lex.yy.c	174;"	d	file:
+EOB_ACT_LAST_MATCH	lex.yy.c	175;"	d	file:
+EXTRALIBS	Makefile	/^EXTRALIBS=-L\/usr\/lib\/libtcmalloc$/;"	m
+FIVE	prover.h	53;"	d
+FLEX	Makefile	/^FLEX=flex$/;"	m
+FLEXINT_H	lex.yy.c	29;"	d	file:
+FLEX_BETA	lex.yy.c	13;"	d	file:
+FLEX_SCANNER	lex.yy.c	8;"	d	file:
+FORWARD_SUBSUMED	prover.h	108;"	d
+FORWARD_SUBSUMES	prover.h	107;"	d
+FOUR	prover.h	52;"	d
+GEN1	prover.h	92;"	d
+GEN2	prover.h	93;"	d
+GEN3	prover.h	94;"	d
+GIVEN	prover.h	89;"	d
+GREATEST	prover.h	12;"	d
+HASH_ADD	uthash.h	317;"	d
+HASH_ADD_BYHASHVALUE	uthash.h	314;"	d
+HASH_ADD_BYHASHVALUE_INORDER	uthash.h	278;"	d
+HASH_ADD_INORDER	uthash.h	281;"	d
+HASH_ADD_INT	uthash.h	382;"	d
+HASH_ADD_KEYPTR	uthash.h	307;"	d
+HASH_ADD_KEYPTR_BYHASHVALUE	uthash.h	284;"	d
+HASH_ADD_KEYPTR_BYHASHVALUE_INORDER	uthash.h	233;"	d
+HASH_ADD_KEYPTR_INORDER	uthash.h	271;"	d
+HASH_ADD_PTR	uthash.h	388;"	d
+HASH_ADD_STR	uthash.h	376;"	d
+HASH_ADD_TO_BKT	uthash.h	736;"	d
+HASH_APPEND_LIST	uthash.h	225;"	d
+HASH_BER	uthash.h	477;"	d
+HASH_BKT_CAPACITY_THRESH	uthash.h	107;"	d
+HASH_BLOOM_ADD	uthash.h	158;"	d
+HASH_BLOOM_ADD	uthash.h	167;"	d
+HASH_BLOOM_BITLEN	uthash.h	139;"	d
+HASH_BLOOM_BITSET	uthash.h	155;"	d
+HASH_BLOOM_BITTEST	uthash.h	156;"	d
+HASH_BLOOM_BYTELEN	uthash.h	140;"	d
+HASH_BLOOM_BYTELEN	uthash.h	169;"	d
+HASH_BLOOM_FREE	uthash.h	150;"	d
+HASH_BLOOM_FREE	uthash.h	166;"	d
+HASH_BLOOM_MAKE	uthash.h	141;"	d
+HASH_BLOOM_MAKE	uthash.h	165;"	d
+HASH_BLOOM_SIGNATURE	uthash.h	1028;"	d
+HASH_BLOOM_TEST	uthash.h	161;"	d
+HASH_BLOOM_TEST	uthash.h	168;"	d
+HASH_CLEAR	uthash.h	974;"	d
+HASH_CNT	uthash.h	1004;"	d
+HASH_COUNT	uthash.h	1003;"	d
+HASH_DEL	uthash.h	392;"	d
+HASH_DELETE	uthash.h	337;"	d
+HASH_DEL_IN_BKT	uthash.h	750;"	d
+HASH_EMIT_KEY	uthash.h	459;"	d
+HASH_EMIT_KEY	uthash.h	466;"	d
+HASH_EXPAND_BUCKETS	uthash.h	791;"	d
+HASH_FCN	uthash.h	471;"	d
+HASH_FCN	uthash.h	473;"	d
+HASH_FIND	uthash.h	131;"	d
+HASH_FIND_BYHASHVALUE	uthash.h	119;"	d
+HASH_FIND_INT	uthash.h	380;"	d
+HASH_FIND_IN_BKT	uthash.h	714;"	d
+HASH_FIND_PTR	uthash.h	386;"	d
+HASH_FIND_STR	uthash.h	374;"	d
+HASH_FNV	uthash.h	500;"	d
+HASH_FSCK	uthash.h	400;"	d
+HASH_FSCK	uthash.h	452;"	d
+HASH_INITIAL_NUM_BUCKETS	uthash.h	105;"	d
+HASH_INITIAL_NUM_BUCKETS_LOG2	uthash.h	106;"	d
+HASH_ITER	uthash.h	993;"	d
+HASH_ITER	uthash.h	997;"	d
+HASH_JEN	uthash.h	539;"	d
+HASH_JEN_MIX	uthash.h	526;"	d
+HASH_MAKE_TABLE	uthash.h	172;"	d
+HASH_MUR	uthash.h	675;"	d
+HASH_OAT	uthash.h	511;"	d
+HASH_OOPS	uthash.h	399;"	d
+HASH_OVERHEAD	uthash.h	985;"	d
+HASH_REPLACE	uthash.h	211;"	d
+HASH_REPLACE_BYHASHVALUE	uthash.h	201;"	d
+HASH_REPLACE_BYHASHVALUE_INORDER	uthash.h	191;"	d
+HASH_REPLACE_INORDER	uthash.h	218;"	d
+HASH_REPLACE_INT	uthash.h	384;"	d
+HASH_REPLACE_PTR	uthash.h	390;"	d
+HASH_REPLACE_STR	uthash.h	378;"	d
+HASH_SAX	uthash.h	490;"	d
+HASH_SELECT	uthash.h	936;"	d
+HASH_SFH	uthash.h	590;"	d
+HASH_SIGNATURE	uthash.h	1027;"	d
+HASH_SORT	uthash.h	843;"	d
+HASH_SRT	uthash.h	844;"	d
+HASH_TO_BKT	uthash.h	320;"	d
+HASH_VALUE	uthash.h	114;"	d
+HH_FROM_ELMT	uthash.h	112;"	d
+HIGH	symbol_table.h	20;"	d
+IMPLICATION	prover.h	45;"	d
+INITIAL	lex.yy.c	684;"	d	file:
+INITIAL	prover.h	72;"	d
+INT16_MAX	lex.yy.c	71;"	d	file:
+INT16_MIN	lex.yy.c	62;"	d	file:
+INT32_MAX	lex.yy.c	74;"	d	file:
+INT32_MIN	lex.yy.c	65;"	d	file:
+INT8_MAX	lex.yy.c	68;"	d	file:
+INT8_MIN	lex.yy.c	59;"	d	file:
+IRES1	prover.h	96;"	d
+IRES2	prover.h	97;"	d
+LFLAGS	Makefile	/^LFLAGS=-O3$/;"	m
+LHSUNIT	prover.h	84;"	d
+LIBS	Makefile	/^LIBS=-lm -lpthread$/;"	m
+LITERAL	prover.h	73;"	d
+LN_COMMENT	lex.yy.c	686;"	d	file:
+LOW	symbol_table.h	21;"	d
+LRES	prover.h	95;"	d
+MAX	antiprenex.c	9;"	d	file:
+MAX	input_preprocessing.c	6;"	d	file:
+MAX	lres.c	7;"	d	file:
+MAX	mres.c	6;"	d	file:
+MAX	parser.tab.c	74;"	d	file:
+MAX	prenex.c	9;"	d	file:
+MAX	preprocessing.c	10;"	d	file:
+MAX	processing.c	9;"	d	file:
+MAX	t_processing.c	8;"	d	file:
+MAX	tree.c	8;"	d	file:
+MAX	unit_resolution.c	7;"	d	file:
+MAX_INT	symbol_table.h	5;"	d
+MAX_LIT_NEGATIVE	prover.h	35;"	d
+MAX_LIT_POSITIVE	prover.h	34;"	d
+MIN	antiprenex.c	10;"	d	file:
+MIN	prenex.c	10;"	d	file:
+MIXEDC	symbol_table.h	16;"	d
+MLE	prover.h	102;"	d
+MLPLE	prover.h	98;"	d
+MNEGATIVE	prover.h	74;"	d
+MPOSITIVE	prover.h	75;"	d
+MRES	prover.h	91;"	d
+MUR_FMIX	uthash.h	666;"	d
+MUR_GETBLOCK	uthash.h	644;"	d
+MUR_GETBLOCK	uthash.h	660;"	d
+MUR_ONE_THREE	uthash.h	654;"	d
+MUR_ONE_THREE	uthash.h	658;"	d
+MUR_PLUS0_ALIGNED	uthash.h	646;"	d
+MUR_PLUS1_ALIGNED	uthash.h	647;"	d
+MUR_PLUS2_ALIGNED	uthash.h	648;"	d
+MUR_PLUS3_ALIGNED	uthash.h	649;"	d
+MUR_ROTL32	uthash.h	665;"	d
+MUR_THREE_ONE	uthash.h	652;"	d
+MUR_THREE_ONE	uthash.h	656;"	d
+MUR_TWO_TWO	uthash.h	653;"	d
+MUR_TWO_TWO	uthash.h	657;"	d
+NEGATION	prover.h	42;"	d
+NEGATIVE	prover.h	24;"	d
+NEGATIVEC	symbol_table.h	15;"	d
+NEGATIVEP	symbol_table.h	10;"	d
+NEGORDERED	prover.h	27;"	d
+NEWEST	prover.h	9;"	d
+NONE	prover.h	16;"	d
+NON_NEGATIVE	prover.h	32;"	d
+NON_POSITIVE	prover.h	33;"	d
+NO_DECLTYPE	uthash.h	41;"	d
+NO_DECLTYPE	uthash.h	45;"	d
+OBJS	Makefile	/^OBJS = $(SRCS:.c=.o)$/;"	m
+OFF	prover.h	4;"	d
+OLDEST	prover.h	10;"	d
+ON	prover.h	3;"	d
+ORDERED	prover.h	23;"	d
+ORDSELECT	prover.h	28;"	d
+PARSERC	Makefile	/^PARSERC = lex.yy.c parser.tab.c$/;"	m
+PARSEROBJS	Makefile	/^PARSEROBJS = lex.yy.o parser.tab.o$/;"	m
+PFLAGS	Makefile	/^PFLAGS=-O3$/;"	m
+PLE	prover.h	79;"	d
+POSITIVE	prover.h	25;"	d
+POSITIVEC	symbol_table.h	14;"	d
+POSITIVEP	symbol_table.h	9;"	d
+PROP	prover.h	39;"	d
+PROPUNIQUEBOX	prover.h	104;"	d
+PROPUNIQUEDIA	prover.h	103;"	d
+R	small_cnf.c	/^formulalist *R = NULL;$/;"	v
+REJECT	lex.yy.c	654;"	d	file:
+REPEATED	prover.h	83;"	d
+RETIRED	prover.h	87;"	d
+SAT	prover.h	101;"	d
+SATURATE	prover.h	26;"	d
+SETC	prover.h	66;"	d
+SETF	prover.h	65;"	d
+SHORTEST	prover.h	8;"	d
+SHUFFLE	prover.h	19;"	d
+SIMP	prover.h	105;"	d
+SMALLEST	prover.h	11;"	d
+SNF	prover.h	88;"	d
+SNF_MINUS	prover.h	100;"	d
+SNF_PLUS	prover.h	99;"	d
+SOS	prover.h	67;"	d
+SRCS	Makefile	/^SRCS = tree.c symbol_table.c prenex.c antiprenex.c nnf_bnf.c nnf_bnf_simp.c simplify.c small_cnf.c input_preprocessing.c subsumption.c renaming.c snf.c snf++.c snf--.c output.c clauses.c unit_resolution.c preprocessing.c mres.c gen2.c gen3.c gen1.c lres.c ires.c processing.c t_processing.c prover.c$/;"	m
+SUBSUMED	prover.h	81;"	d
+T	prover.h	54;"	d
+TAND	parser.tab.h	/^    TAND = 262,$/;"	e	enum:yytokentype
+TARGET	Makefile	/^TARGET = ctkn$/;"	m
+TAUTOLOGY	prover.h	90;"	d
+TCBOX	parser.tab.h	/^    TCBOX = 269,$/;"	e	enum:yytokentype
+TCDIA	parser.tab.h	/^    TCDIA = 270,$/;"	e	enum:yytokentype
+TCLAUSES	parser.tab.h	/^    TCLAUSES = 280,$/;"	e	enum:yytokentype
+TCOMMA	parser.tab.h	/^    TCOMMA = 279,$/;"	e	enum:yytokentype
+TDOT	parser.tab.h	/^    TDOT = 278,$/;"	e	enum:yytokentype
+TEND	parser.tab.h	/^    TEND = 284,$/;"	e	enum:yytokentype
+TFALSE	parser.tab.h	/^    TFALSE = 276,$/;"	e	enum:yytokentype
+TFORMULAS	parser.tab.h	/^    TFORMULAS = 281,$/;"	e	enum:yytokentype
+TIFF	parser.tab.h	/^    TIFF = 258,$/;"	e	enum:yytokentype
+TIMPLY	parser.tab.h	/^    TIMPLY = 259,$/;"	e	enum:yytokentype
+TLPAREN	parser.tab.h	/^    TLPAREN = 285,$/;"	e	enum:yytokentype
+TNAME	parser.tab.h	/^    TNAME = 272,$/;"	e	enum:yytokentype
+TNECESSARY	parser.tab.h	/^    TNECESSARY = 265,$/;"	e	enum:yytokentype
+TNOT	parser.tab.h	/^    TNOT = 263,$/;"	e	enum:yytokentype
+TNUMBER	parser.tab.h	/^    TNUMBER = 273,$/;"	e	enum:yytokentype
+TOBOX	parser.tab.h	/^    TOBOX = 266,$/;"	e	enum:yytokentype
+TODIA	parser.tab.h	/^    TODIA = 267,$/;"	e	enum:yytokentype
+TONLYIF	parser.tab.h	/^    TONLYIF = 260,$/;"	e	enum:yytokentype
+TOR	parser.tab.h	/^    TOR = 261,$/;"	e	enum:yytokentype
+TPOSSIBLE	parser.tab.h	/^    TPOSSIBLE = 264,$/;"	e	enum:yytokentype
+TRPAREN	parser.tab.h	/^    TRPAREN = 286$/;"	e	enum:yytokentype
+TSET	parser.tab.h	/^    TSET = 277,$/;"	e	enum:yytokentype
+TSOS	parser.tab.h	/^    TSOS = 282,$/;"	e	enum:yytokentype
+TSTART	parser.tab.h	/^    TSTART = 274,$/;"	e	enum:yytokentype
+TTRUE	parser.tab.h	/^    TTRUE = 275,$/;"	e	enum:yytokentype
+TUSABLE	parser.tab.h	/^    TUSABLE = 283,$/;"	e	enum:yytokentype
+UINT16_MAX	lex.yy.c	80;"	d	file:
+UINT32_MAX	lex.yy.c	83;"	d	file:
+UINT8_MAX	lex.yy.c	77;"	d	file:
+UNIT	prover.h	82;"	d
+UNITGEN1	prover.h	85;"	d
+UNITGEN3	prover.h	86;"	d
+USABLE	prover.h	68;"	d
+UTHASH_H	uthash.h	25;"	d
+UTHASH_VERSION	uthash.h	27;"	d
+UT_hash_bucket	uthash.h	/^typedef struct UT_hash_bucket {$/;"	s
+UT_hash_bucket	uthash.h	/^} UT_hash_bucket;$/;"	t	typeref:struct:UT_hash_bucket
+UT_hash_handle	uthash.h	/^typedef struct UT_hash_handle {$/;"	s
+UT_hash_handle	uthash.h	/^} UT_hash_handle;$/;"	t	typeref:struct:UT_hash_handle
+UT_hash_table	uthash.h	/^typedef struct UT_hash_table {$/;"	s
+UT_hash_table	uthash.h	/^} UT_hash_table;$/;"	t	typeref:struct:UT_hash_table
+WP	uthash.h	650;"	d
+YYABORT	parser.tab.c	1031;"	d	file:
+YYABORT	parser.tab.c	1032;"	d	file:
+YYABORT	parser.tab.c	2072;"	d	file:
+YYACCEPT	parser.tab.c	1029;"	d	file:
+YYACCEPT	parser.tab.c	1030;"	d	file:
+YYACCEPT	parser.tab.c	2073;"	d	file:
+YYASSERT	parser.tab.c	277;"	d	file:
+YYBACKUP	parser.tab.c	1041;"	d	file:
+YYBACKUP	parser.tab.c	1042;"	d	file:
+YYBACKUP	parser.tab.c	2075;"	d	file:
+YYBISON	parser.tab.c	36;"	d	file:
+YYBISON_VERSION	parser.tab.c	39;"	d	file:
+YYCHK	parser.tab.c	657;"	d	file:
+YYCHK1	parser.tab.c	3418;"	d	file:
+YYDEBUG	parser.tab.h	37;"	d
+YYDPRINTF	parser.tab.c	676;"	d	file:
+YYDPRINTF	parser.tab.c	734;"	d	file:
+YYEMPTY	parser.tab.c	/^static const int YYEMPTY = -2;$/;"	v	file:
+YYEOF	parser.tab.c	/^static const int YYEOF = 0;$/;"	v	file:
+YYERROR	parser.tab.c	1033;"	d	file:
+YYERROR	parser.tab.c	1034;"	d	file:
+YYERROR	parser.tab.c	2074;"	d	file:
+YYERROR_VERBOSE	parser.tab.c	162;"	d	file:
+YYERROR_VERBOSE	parser.tab.c	163;"	d	file:
+YYERROR_VERBOSE	parser.tab.c	165;"	d	file:
+YYFILL	parser.tab.c	1039;"	d	file:
+YYFILL	parser.tab.c	1040;"	d	file:
+YYFINAL	parser.tab.c	281;"	d	file:
+YYFPRINTF	parser.tab.c	667;"	d	file:
+YYFREE	parser.tab.c	195;"	d	file:
+YYHEADROOM	parser.tab.c	760;"	d	file:
+YYINDEX	parser.tab.c	3697;"	d	file:
+YYINITDEPTH	parser.tab.c	741;"	d	file:
+YYJMP_BUF	parser.tab.c	216;"	d	file:
+YYLAST	parser.tab.c	283;"	d	file:
+YYLONGJMP	parser.tab.c	219;"	d	file:
+YYMALLOC	parser.tab.c	198;"	d	file:
+YYMAXDEPTH	parser.tab.c	70;"	d	file:
+YYMAXDEPTH	parser.tab.c	752;"	d	file:
+YYMAXLEFT	parser.tab.c	297;"	d	file:
+YYMAXRHS	parser.tab.c	294;"	d	file:
+YYMAXUTOK	parser.tab.c	301;"	d	file:
+YYNNTS	parser.tab.c	288;"	d	file:
+YYNRULES	parser.tab.c	290;"	d	file:
+YYNSTATES	parser.tab.c	292;"	d	file:
+YYNTOKENS	parser.tab.c	286;"	d	file:
+YYPACT_NINF	parser.tab.c	375;"	d	file:
+YYPURE	parser.tab.c	45;"	d	file:
+YYREALLOC	parser.tab.c	201;"	d	file:
+YYRECOVERING	parser.tab.c	1035;"	d	file:
+YYRECOVERING	parser.tab.c	1036;"	d	file:
+YYRECOVERING	parser.tab.c	2077;"	d	file:
+YYRELOC	parser.tab.c	2328;"	d	file:
+YYRESULTTAG	parser.tab.c	/^typedef enum { yyok, yyaccept, yyabort, yyerr } YYRESULTTAG;$/;"	t	typeref:enum:__anon1	file:
+YYSETJMP	parser.tab.c	217;"	d	file:
+YYSIZEMAX	parser.tab.c	204;"	d	file:
+YYSKELETON_NAME	parser.tab.c	42;"	d	file:
+YYSTACKEXPANDABLE	parser.tab.c	763;"	d	file:
+YYSTATE	lex.yy.c	132;"	d	file:
+YYSTYPE	parser.tab.h	/^typedef union YYSTYPE YYSTYPE;$/;"	t	typeref:union:YYSTYPE
+YYSTYPE	parser.tab.h	/^union YYSTYPE$/;"	u
+YYSTYPE_IS_DECLARED	parser.tab.h	136;"	d
+YYSTYPE_IS_TRIVIAL	parser.tab.h	135;"	d
+YYTABLES_NAME	lex.yy.c	2161;"	d	file:
+YYTABLE_NINF	parser.tab.c	376;"	d	file:
+YYTERROR	parser.tab.c	637;"	d	file:
+YYTOKENTYPE	parser.tab.h	85;"	d
+YYTRANSLATE	parser.tab.c	303;"	d	file:
+YYUNDEFTOK	parser.tab.c	300;"	d	file:
+YYUSE	parser.tab.c	251;"	d	file:
+YYUSE	parser.tab.c	253;"	d	file:
+YY_	parser.tab.c	186;"	d	file:
+YY_	parser.tab.c	190;"	d	file:
+YY_ATTRIBUTE	parser.tab.c	226;"	d	file:
+YY_ATTRIBUTE	parser.tab.c	228;"	d	file:
+YY_ATTRIBUTE_PURE	parser.tab.c	233;"	d	file:
+YY_ATTRIBUTE_UNUSED	parser.tab.c	237;"	d	file:
+YY_AT_BOL	lex.yy.c	340;"	d	file:
+YY_BREAK	lex.yy.c	867;"	d	file:
+YY_BUFFER_EOF_PENDING	lex.yy.c	256;"	d	file:
+YY_BUFFER_NEW	lex.yy.c	244;"	d	file:
+YY_BUFFER_NORMAL	lex.yy.c	245;"	d	file:
+YY_BUFFER_STATE	lex.yy.c	/^typedef struct yy_buffer_state *YY_BUFFER_STATE;$/;"	t	typeref:struct:yy_buffer_state	file:
+YY_BUF_SIZE	lex.yy.c	149;"	d	file:
+YY_BUF_SIZE	lex.yy.c	151;"	d	file:
+YY_CHAR	lex.yy.c	/^typedef unsigned char YY_CHAR;$/;"	t	file:
+YY_CURRENT_BUFFER	lex.yy.c	272;"	d	file:
+YY_CURRENT_BUFFER_LVALUE	lex.yy.c	279;"	d	file:
+YY_DECL	lex.yy.c	854;"	d	file:
+YY_DECL_IS_OURS	lex.yy.c	849;"	d	file:
+YY_DO_BEFORE_ACTION	lex.yy.c	374;"	d	file:
+YY_END_OF_BUFFER	lex.yy.c	382;"	d	file:
+YY_END_OF_BUFFER_CHAR	lex.yy.c	140;"	d	file:
+YY_EXIT_FAILURE	lex.yy.c	1957;"	d	file:
+YY_EXTRA_TYPE	lex.yy.c	697;"	d	file:
+YY_FATAL_ERROR	lex.yy.c	840;"	d	file:
+YY_FLEX_MAJOR_VERSION	lex.yy.c	9;"	d	file:
+YY_FLEX_MINOR_VERSION	lex.yy.c	10;"	d	file:
+YY_FLEX_SUBMINOR_VERSION	lex.yy.c	11;"	d	file:
+YY_FLUSH_BUFFER	lex.yy.c	308;"	d	file:
+YY_IGNORE_MAYBE_UNINITIALIZED_BEGIN	parser.tab.c	258;"	d	file:
+YY_IGNORE_MAYBE_UNINITIALIZED_BEGIN	parser.tab.c	268;"	d	file:
+YY_IGNORE_MAYBE_UNINITIALIZED_END	parser.tab.c	262;"	d	file:
+YY_IGNORE_MAYBE_UNINITIALIZED_END	parser.tab.c	269;"	d	file:
+YY_INITIAL_VALUE	parser.tab.c	265;"	d	file:
+YY_INITIAL_VALUE	parser.tab.c	272;"	d	file:
+YY_INPUT	lex.yy.c	793;"	d	file:
+YY_INT_ALIGNED	lex.yy.c	4;"	d	file:
+YY_LESS_LINENO	lex.yy.c	177;"	d	file:
+YY_LINENO_REWIND_TO	lex.yy.c	178;"	d	file:
+YY_LOCATION_PRINT	parser.tab.c	672;"	d	file:
+YY_MORE_ADJ	lex.yy.c	656;"	d	file:
+YY_NEW_FILE	lex.yy.c	138;"	d	file:
+YY_NULL	lex.yy.c	112;"	d	file:
+YY_NULLPTR	parser.tab.c	152;"	d	file:
+YY_NULLPTR	parser.tab.c	154;"	d	file:
+YY_NUM_RULES	lex.yy.c	381;"	d	file:
+YY_READ_BUF_SIZE	lex.yy.c	775;"	d	file:
+YY_READ_BUF_SIZE	lex.yy.c	777;"	d	file:
+YY_REDUCE_PRINT	parser.tab.c	2512;"	d	file:
+YY_REDUCE_PRINT	parser.tab.c	2514;"	d	file:
+YY_RESERVE_GLRSTACK	parser.tab.c	767;"	d	file:
+YY_RESERVE_GLRSTACK	parser.tab.c	773;"	d	file:
+YY_RESTORE_YY_MORE_OFFSET	lex.yy.c	657;"	d	file:
+YY_RULE_SETUP	lex.yy.c	870;"	d	file:
+YY_SC_TO_UI	lex.yy.c	119;"	d	file:
+YY_SKIP_YYWRAP	lex.yy.c	345;"	d	file:
+YY_START	lex.yy.c	131;"	d	file:
+YY_START_STACK_INCR	lex.yy.c	835;"	d	file:
+YY_STATE_BUF_SIZE	lex.yy.c	157;"	d	file:
+YY_STATE_EOF	lex.yy.c	135;"	d	file:
+YY_STRUCT_YY_BUFFER_STATE	lex.yy.c	197;"	d	file:
+YY_SYMBOL_PRINT	parser.tab.c	712;"	d	file:
+YY_SYMBOL_PRINT	parser.tab.c	735;"	d	file:
+YY_TYPEDEF_YY_BUFFER_STATE	lex.yy.c	160;"	d	file:
+YY_TYPEDEF_YY_SIZE_T	lex.yy.c	165;"	d	file:
+YY_USER_ACTION	lex.yy.c	862;"	d	file:
+YY_USE_CONST	lex.yy.c	100;"	d	file:
+YY_USE_CONST	lex.yy.c	93;"	d	file:
+YY_YY_PARSER_TAB_H_INCLUDED	parser.tab.h	34;"	d
+_Noreturn	parser.tab.c	243;"	d	file:
+_Noreturn	parser.tab.c	245;"	d	file:
+__STDC_LIMIT_MACROS	lex.yy.c	39;"	d	file:
+add_branch	branch.c	/^void add_branch(tbranch *branch){$/;"	f
+add_brancheslist	branch.c	/^void add_brancheslist(tbranch **branch, brancheslist **list){$/;"	f
+add_definition	renaming.c	/^void add_definition(int id, tnode *formula, int set, int subtype, int modal_level) {$/;"	f
+add_literal	branch.c	/^int add_literal(int literal, literalshash** list, int* tliterals){$/;"	f
+add_mclause	branch.c	/^void add_mclause(tclause *clause, int type){$/;"	f
+add_pclause	branch.c	/^void add_pclause(tclause* clause){$/;"	f
+add_pos_mclause	branch.c	/^void add_pos_mclause(tclause *clause){$/;"	f
+add_renaming	renaming.c	/^int add_renaming (int id, tnode *formula, int set, int subtype, int modal_level) {$/;"	f
+afactor	small_cnf.c	/^int afactor(int a, tnode *formula, tnode *subformula) {$/;"	f
+afactor	tree.h	/^  int afactor;$/;"	m	struct:tnode
+agent	model.h	/^    hagbranches *agent;$/;"	m	struct:hmlbranches
+agent	model.h	/^    int agent;$/;"	m	struct:hagbranches
+agent	model.h	/^    int agent;$/;"	m	struct:tbranch
+agent	symbol_table.h	/^  int agent;$/;"	m	struct:tclause
+agent_node	symbol_table.h	/^typedef struct agent_node {$/;"	s
+agent_node	symbol_table.h	/^} agent_node;$/;"	t	typeref:struct:agent_node
+agentsid	lex.yy.c	/^struct agent_node *agentsid = NULL;$/;"	v	typeref:struct:agent_node
+agentsname	lex.yy.c	/^struct agent_node *agentsname = NULL; $/;"	v	typeref:struct:agent_node
+allclauses	clauses.c	/^hclauses *allclauses = NULL;$/;"	v
+antiprenex	prover.c	/^int antiprenex = OFF;$/;"	v
+appendliterals	branch.c	/^void appendliterals(literalshash **original, literalshash *append){$/;"	f
+axiom	parser.tab.h	/^    int axiom;$/;"	m	struct:axiom_list
+axiom_list	parser.tab.h	/^  axiom_list *axiom_list;$/;"	m	union:YYSTYPE
+axiom_list	parser.tab.h	/^  typedef struct axiom_list {$/;"	s
+axiom_list	parser.tab.h	/^  } axiom_list;$/;"	t	typeref:struct:axiom_list
+axioms	parser.y	/^axioms : {$$=NULL;}$/;"	l
+backward_subsumed	subsumption.c	/^int backward_subsumed (tclause **clause, hml_pclauses *set) {$/;"	f
+backward_subsumes	subsumption.c	/^void backward_subsumes (tclause *clause, hml_pclauses **set) {$/;"	f
+backward_subsumption	prover.c	/^int backward_subsumption = OFF;$/;"	v
+bfactor	tree.h	/^  int bfactor;$/;"	m	struct:tnode
+bloom_bv	uthash.h	/^   uint8_t *bloom_bv;$/;"	m	struct:UT_hash_table
+bloom_nbits	uthash.h	/^   uint8_t bloom_nbits;$/;"	m	struct:UT_hash_table
+bloom_sig	uthash.h	/^   uint32_t bloom_sig; \/* used only to test bloom exists in external analysis *\/$/;"	m	struct:UT_hash_table
+bnf	prover.c	/^int bnf = OFF;$/;"	v
+bnfsimp	prover.c	/^int bnfsimp = OFF;$/;"	v
+branch	model.h	/^    tbranch *branch;$/;"	m	struct:brancheslist
+branch	model.h	/^    tbranch *branch;$/;"	m	struct:hidbranches
+branch_mclauses	branch.c	/^void branch_mclauses(hml_mclauses *mclauses){$/;"	f
+branch_pclauses	branch.c	/^void branch_pclauses(hml_pclauses *pclauses){$/;"	f
+branches	model.h	/^    hidbranches *branches;$/;"	m	struct:hagbranches
+branches	model.h	/^    hidbranches *branches;$/;"	m	struct:hmaxbranches
+brancheslist	model.h	/^typedef struct brancheslist{$/;"	s
+brancheslist	model.h	/^}brancheslist;$/;"	t	typeref:struct:brancheslist
+buckets	uthash.h	/^   UT_hash_bucket *buckets;$/;"	m	struct:UT_hash_table
+build_candidates	lres.c	/^clauseslist *build_candidates(int literal, clauseslist *list) {$/;"	f
+build_candidates_negpos	lres.c	/^clauseslist *build_candidates_negpos(int type, int class, int literal, clauseslist *list) {$/;"	f
+build_candidates_newnegordpos	lres.c	/^clauseslist *build_candidates_newnegordpos(clauseslist *list) {$/;"	f
+build_candidates_selection_1	lres.c	/^clauseslist *build_candidates_selection_1(int literal, clauseslist *list) {$/;"	f
+build_candidates_selection_2	lres.c	/^clauseslist *build_candidates_selection_2(int literal, clauseslist *list) {$/;"	f
+build_modal_candidates	gen3.c	/^clauseslist *build_modal_candidates(hml_mclauses *set,int agent,int modal_level,int type, int literal) {$/;"	f
+build_modal_negative	gen3.c	/^clauseslist *build_modal_negative(hml_mclauses *set,int agent,int modal_level) {$/;"	f
+build_resolvents_gen	gen3.c	/^listsclauseslist *build_resolvents_gen(listsclauseslist *candidates) {$/;"	f
+build_unit_candidates	unit_resolution.c	/^clauseslist *build_unit_candidates (clauseslist *initial, clauseslist *add) {$/;"	f
+calculate_pfactor	small_cnf.c	/^tnode *calculate_pfactor(tnode *t) {$/;"	f
+calculate_polarity	input_preprocessing.c	/^tnode *calculate_polarity (tnode *s, int sign, int ml) {$/;"	f
+check_in_sos	processing.c	/^int check_in_sos(tclause *clause) {$/;"	f
+check_input	prover.c	/^int check_input(tnode *root) {$/;"	f
+check_last_level	processing.c	/^void check_last_level (void) {$/;"	f
+check_minimal	snf++.c	/^int check_minimal(tclause *clause, int modal_level) {$/;"	f
+check_repeated_modal	clauses.c	/^int check_repeated_modal (tclause *clause, hml_mclauses *set) {$/;"	f
+check_repeated_prop	clauses.c	/^int check_repeated_prop (tclause *clause, hml_pclauses *set) {$/;"	f
+check_resolvents_gen1	gen1.c	/^listsclauseslist *check_resolvents_gen1(tclause *chosen, listsclauseslist *resolvents) {$/;"	f
+chosen	processing.c	/^int chosen (hml_pclauses **hmlp) {$/;"	f
+chosen_level	processing.c	/^int chosen_level (hml_pclauses **hmlp) {$/;"	f
+classify_clause	clauses.c	/^int classify_clause(literalslist *l) {$/;"	f
+clausaltableau	model.c	/^void clausaltableau() {$/;"	f
+clause	clauses.h	/^  tclause *clause;$/;"	m	struct:hclauses
+clause	parser.y	/^clause :$/;"	l
+clause	snf++.c	/^  tclause *clause;$/;"	m	struct:clauseslistsnfplus	file:
+clause	snf--.c	/^  tclause *clause;$/;"	m	struct:clauseslistsnfminus	file:
+clause_in_list	clauses.c	/^int clause_in_list(tclause *c, clauseslist *l) {$/;"	f
+clause_number	symbol_table.h	/^  int clause_number;$/;"	m	struct:clauseslist
+clause_pointer	symbol_table.h	/^  tclause *clause_pointer;$/;"	m	struct:clauseslist
+clause_selection	prover.c	/^int clause_selection = SHORTEST;$/;"	v
+clauses	gen1.c	/^  clauseslist *clauses;$/;"	m	struct:listsclauseslist	file:
+clauses	gen3.c	/^  clauseslist *clauses;$/;"	m	struct:listsclauseslist	file:
+clauses	parser.y	/^clauses :$/;"	l
+clauses	symbol_table.h	/^  hml_clauses *clauses;$/;"	m	struct:prop_node
+clausesid	symbol_table.h	/^typedef struct clausesid {$/;"	s
+clausesid	symbol_table.h	/^} clausesid;$/;"	t	typeref:struct:clausesid
+clausesize	prover.c	/^int clausesize = 0;$/;"	v
+clauseslist	symbol_table.h	/^typedef struct clauseslist {$/;"	s
+clauseslist	symbol_table.h	/^} clauseslist;$/;"	t	typeref:struct:clauseslist
+clauseslistsnfminus	snf--.c	/^typedef struct clauseslistsnfminus {$/;"	s	file:
+clauseslistsnfminus	snf--.c	/^} clauseslistsnfminus;$/;"	t	typeref:struct:clauseslistsnfminus	file:
+clauseslistsnfplus	snf++.c	/^typedef struct clauseslistsnfplus {$/;"	s	file:
+clauseslistsnfplus	snf++.c	/^} clauseslistsnfplus;$/;"	t	typeref:struct:clauseslistsnfplus	file:
+clean_c_positions	symbol_table.c	/^hptr_nodes *clean_c_positions(hptr_nodes *positions) {$/;"	f
+clean_p_positions	symbol_table.c	/^hml_props *clean_p_positions(hml_props *mlpositions) {$/;"	f
+clean_positions	symbol_table.c	/^void clean_positions(void) {$/;"	f
+clean_ren_hash	renaming.c	/^void clean_ren_hash(void) {$/;"	f
+clear_all	symbol_table.c	/^void clear_all (void) {$/;"	f
+clear_hashes	symbol_table.c	/^void clear_hashes (void) {$/;"	f
+closed	model.h	/^    int closed;$/;"	m	struct:tbranch
+cnf	prover.c	/^int cnf = OFF;$/;"	v
+combine	gen3.c	/^listsclauseslist *combine (listsclauseslist *list1, listsclauseslist *list2) {$/;"	f
+compare_clauses	clauses.c	/^int compare_clauses(clauseslist *left, clauseslist *right) {$/;"	f
+compare_disj	snf.c	/^int compare_disj(literalslist *l1, literalslist *l2) {$/;"	f
+compare_formula_nnf	tree.c	/^int compare_formula_nnf(tnode *t1, tnode *t2) {$/;"	f
+compare_formula_snf	tree.c	/^int compare_formula_snf(tnode *t1, tnode *t2) {$/;"	f
+compare_literal	simplify.c	/^int compare_literal(int id1, int id2) {$/;"	f
+compare_positions	symbol_table.c	/^int compare_positions(hptr_nodes *p1, hptr_nodes *p2) {$/;"	f
+compare_sizes_lists	tree.c	/^int compare_sizes_lists(formulalist *l1, formulalist *l2) {$/;"	f
+configfile	prover.c	/^int configfile = OFF;$/;"	v
+conjunction_renaming	prover.c	/^int conjunction_renaming = OFF;$/;"	v
+construct_proof	clauses.c	/^clauseslist *construct_proof(tclause *proof) {$/;"	f
+contains	subsumption.c	/^int contains (literalslist *l1, literalslist *l2) {$/;"	f
+copy	gen3.c	/^clauseslist *copy(clauseslist *list1) {$/;"	f
+copy_list	tree.c	/^formulalist *copy_list(formulalist *s) {$/;"	f
+copy_literal_list	input_preprocessing.c	/^literal_list *copy_literal_list(literal_list *l) {$/;"	f
+copy_literals	branch.c	/^void copy_literals(literalshash** list, literalshash* copy) {$/;"	f
+copy_node	tree.c	/^void copy_node(tnode *t1, tnode *t2) {$/;"	f
+copy_positions	input_preprocessing.c	/^literal_list *copy_positions(prop_node *p) {$/;"	f
+copy_tree	tree.c	/^tnode *copy_tree(tnode *s) {$/;"	f
+count	uthash.h	/^   unsigned count;$/;"	m	struct:UT_hash_bucket
+count_diamonds	clauses.c	/^void count_diamonds (void) {$/;"	f
+counting	antiprenex.c	/^int counting = 0;$/;"	v
+create_4_clause	preprocessing.c	/^tclause *create_4_clause(tclause *c,int left, int right) {\/\/parent, left, right of new modal clause$/;"	f
+create_a_node	symbol_table.c	/^agent_node *create_a_node (char* name, int id){$/;"	f
+create_branch	branch.c	/^tbranch *create_branch(int ml, int agent){$/;"	f
+create_clause	snf.c	/^void create_clause (int set, tnode *s) {$/;"	f
+create_clause_snf	snf.c	/^void create_clause_snf(int set, int type, int subtype, int modal_level, int agent, int numdiamond, tnode *left, literal_list *right, justification *just) {$/;"	f
+create_clauses	snf.c	/^void create_clauses (int set, tnode *s) {$/;"	f
+create_empty_ml	branch.c	/^void create_empty_ml(int modal_level, int literal, int agent){$/;"	f
+create_new_modal_clause	preprocessing.c	/^tclause *create_new_modal_clause(tclause *clause, int prop, int rule) {$/;"	f
+create_p_node	symbol_table.c	/^prop_node *create_p_node (char* name, int id) {$/;"	f
+create_pos_clause	preprocessing.c	/^tclause *create_pos_clause(int type, int subtype, tclause *c, int left, int right) {$/;"	f
+create_pos_literal	preprocessing.c	/^int create_pos_literal(int lit) {$/;"	f
+create_t_clause	preprocessing.c	/^tclause *create_t_clause(tclause *c) {$/;"	f
+create_tnode	tree.c	/^tnode *create_tnode(int type, int id, int mdepth, tnode *left, tnode *right, formulalist *list) {$/;"	f
+cycles	prover.c	/^int cycles;$/;"	v
+declaration	parser.y	/^declaration : TSET TLPAREN option TRPAREN $/;"	l
+declarations	parser.y	/^declarations :$/;"	l
+definition_added	tree.h	/^  int definition_added;$/;"	m	struct:formulalist
+definition_added	tree.h	/^  int definition_added;$/;"	m	struct:tnode
+delete_branch	branch.c	/^void delete_branch(tbranch **branch){$/;"	f
+delete_branch_hash	branch.c	/^void delete_branch_hash(tbranch *branch){$/;"	f
+delete_clause	preprocessing.c	/^void delete_clause(tclause *clause) {$/;"	f
+delete_clause_all	clauses.c	/^void delete_clause_all(int number) {$/;"	f
+delete_clause_list	clauses.c	/^clauseslist *delete_clause_list(tclause *c, clauseslist *l) {$/;"	f
+delete_clause_modal	clauses.c	/^void delete_clause_modal(hml_mclauses **set, tclause *c) {$/;"	f
+delete_clause_p_node	symbol_table.c	/^void delete_clause_p_node (prop_node *p, int type, int modal_level, int idclause) {$/;"	f
+delete_clause_p_nodes	symbol_table.c	/^void delete_clause_p_nodes (int modal_level, int idclause) {$/;"	f
+delete_clause_prop	clauses.c	/^void delete_clause_prop(hml_pclauses **set,tclause *c) {$/;"	f
+delete_clauses_list	clauses.c	/^clauseslist *delete_clauses_list (clauseslist *l) {$/;"	f
+delete_literalslist	model.c	/^void delete_literalslist(literalshash** list) {$/;"	f
+deleted	symbol_table.h	/^  int deleted;$/;"	m	struct:hptr_nodes
+deleted	symbol_table.h	/^  struct justification *deleted;$/;"	m	struct:tclause	typeref:struct:tclause::justification
+deletedclauses	clauses.c	/^hclauses *deletedclauses = NULL;$/;"	v
+destroy_hash	branch.c	/^void destroy_hash(){$/;"	f
+destroy_literalshash	branch.c	/^void destroy_literalshash(literalshash **users) {$/;"	f
+diamond_restricted_res	prover.c	/^int diamond_restricted_res = OFF;$/;"	v
+direct_subformulae	small_cnf.c	/^formulalist *direct_subformulae(formulalist *l, tnode *t) {$/;"	f
+disjunction_literals	parser.y	/^disjunction_literals : disjunction_literals TOR literal$/;"	l
+display_mem_info	sysstat.c	/^void display_mem_info (void) {$/;"	f
+distribute	input_preprocessing.c	/^formulalist *distribute(formulalist * l) {$/;"	f
+distribute	tree.h	/^  int distribute;$/;"	m	struct:tnode
+do_box_false	mres.c	/^void do_box_false(hml_mclauses *set) {$/;"	f
+do_early_ple	input_preprocessing.c	/^void do_early_ple (void) {$/;"	f
+do_gen1	gen1.c	/^void do_gen1(int clause) {$/;"	f
+do_gen2	gen2.c	/^void do_gen2 (hml_mclauses *set) {$/;"	f
+do_gen3	gen3.c	/^void do_gen3(int clause) {$/;"	f
+do_initial	processing.c	/^int do_initial (int cycle) {$/;"	f
+do_ires	ires.c	/^void do_ires(int clause) {$/;"	f
+do_lres	lres.c	/^void do_lres(int clause) {$/;"	f
+do_mod_ordires	ires.c	/^void do_mod_ordires (int clause) {$/;"	f
+do_mres	mres.c	/^void do_mres (hml_mclauses *set) {$/;"	f
+do_neglres	lres.c	/^void do_neglres (int clause) {$/;"	f
+do_newnegordlres	lres.c	/^void do_newnegordlres (int clause) {$/;"	f
+do_ordires	ires.c	/^void do_ordires (int clause) {$/;"	f
+do_ordlres	lres.c	/^void do_ordlres (int clause) {$/;"	f
+do_ordneglres	lres.c	/^void do_ordneglres (int clause) {$/;"	f
+do_ordselectlres	lres.c	/^void do_ordselectlres (int clause) {$/;"	f
+do_poslres	lres.c	/^void do_poslres (int clause) {$/;"	f
+do_pure_literal	input_preprocessing.c	/^int do_pure_literal(void) {$/;"	f
+do_res	lres.c	/^void do_res(int literal, tclause *chosen, clauseslist *candidates) {$/;"	f
+do_satlres	lres.c	/^void do_satlres (int clause) {$/;"	f
+do_selectlres_1	lres.c	/^void do_selectlres_1(int clause) {$/;"	f
+do_selectlres_2	lres.c	/^void do_selectlres_2(literalslist *list, int clause) {$/;"	f
+do_truth_propagation	input_preprocessing.c	/^void do_truth_propagation(void) {$/;"	f
+early_mlple	prover.c	/^int early_mlple = OFF;$/;"	v
+early_ple	prover.c	/^int early_ple = OFF;$/;"	v
+eliminate_double_implications	input_preprocessing.c	/^tnode *eliminate_double_implications(tnode *s, int polarity, int ml) {$/;"	f
+emlple	input_preprocessing.c	/^int emlple = 0;$/;"	v
+expand_mult	uthash.h	/^   unsigned expand_mult;$/;"	m	struct:UT_hash_bucket
+expandmodallevels	branch.c	/^void expandmodallevels(){$/;"	f
+file	parser.y	/^file :$/;"	l
+find_agent	symbol_table.c	/^agent_node *find_agent (int id) {$/;"	f
+find_branch	branch.c	/^tbranch *find_branch(tbranch *branch){$/;"	f
+find_duplicated_branch	branch.c	/^int find_duplicated_branch(hidbranches *lbranches, tbranch *branch){$/;"	f
+find_p_position	symbol_table.c	/^int find_p_position(tnode *position) {$/;"	f
+find_prop	symbol_table.c	/^prop_node *find_prop (int id) {$/;"	f
+five	symbol_table.h	/^  int five;$/;"	m	struct:agent_node
+flatten	nnf_bnf_simp.c	/^formulalist *flatten(int type, formulalist *s) {$/;"	f
+flatten	nnf_simp.c	/^formulalist *flatten(formulalist *s) {$/;"	f
+flatten_by_type	nnf_bnf.c	/^formulalist *flatten_by_type(int type, formulalist *s) {$/;"	f
+flex_int16_t	lex.yy.c	/^typedef int16_t flex_int16_t;$/;"	t	file:
+flex_int16_t	lex.yy.c	/^typedef short int flex_int16_t;$/;"	t	file:
+flex_int32_t	lex.yy.c	/^typedef int flex_int32_t;$/;"	t	file:
+flex_int32_t	lex.yy.c	/^typedef int32_t flex_int32_t;$/;"	t	file:
+flex_int8_t	lex.yy.c	/^typedef int8_t flex_int8_t;$/;"	t	file:
+flex_int8_t	lex.yy.c	/^typedef signed char flex_int8_t;$/;"	t	file:
+flex_uint16_t	lex.yy.c	/^typedef uint16_t flex_uint16_t;$/;"	t	file:
+flex_uint16_t	lex.yy.c	/^typedef unsigned short int flex_uint16_t;$/;"	t	file:
+flex_uint32_t	lex.yy.c	/^typedef uint32_t flex_uint32_t;$/;"	t	file:
+flex_uint32_t	lex.yy.c	/^typedef unsigned int flex_uint32_t;$/;"	t	file:
+flex_uint8_t	lex.yy.c	/^typedef uint8_t flex_uint8_t;$/;"	t	file:
+flex_uint8_t	lex.yy.c	/^typedef unsigned char flex_uint8_t; $/;"	t	file:
+formula	parser.y	/^formula : formula TIFF formula $/;"	l
+formula	tree.h	/^  struct tnode *formula;$/;"	m	struct:formulalist	typeref:struct:formulalist::tnode
+formulalist	parser.tab.h	/^  formulalist *formulalist;$/;"	m	union:YYSTYPE
+formulalist	tree.h	/^typedef struct formulalist {$/;"	s
+formulalist	tree.h	/^} formulalist;$/;"	t	typeref:struct:formulalist
+formulas	parser.y	/^formulas :$/;"	l
+formulasize	prover.c	/^int formulasize = 0;$/;"	v
+forward_subsumed	subsumption.c	/^int forward_subsumed (tclause **clause, hml_pclauses *set) {$/;"	f
+forward_subsumes	subsumption.c	/^void forward_subsumes (tclause *clause, hml_pclauses **set) {$/;"	f
+forward_subsumption	prover.c	/^int forward_subsumption = OFF;$/;"	v
+four	symbol_table.h	/^  int four;$/;"	m	struct:agent_node
+free_anode	symbol_table.c	/^void free_anode(agent_node *a) {$/;"	f
+free_candidates	lres.c	/^clauseslist *free_candidates(clauseslist *c) {$/;"	f
+free_clauses	clauses.c	/^void free_clauses (void) {$/;"	f
+free_clauses_all	clauses.c	/^void free_clauses_all (void) {$/;"	f
+free_clauses_deleted	clauses.c	/^void free_clauses_deleted (void) {$/;"	f
+free_clauses_list	clauses.c	/^hclauses *free_clauses_list (hclauses *clause) {$/;"	f
+free_clauses_proof	clauses.c	/^void free_clauses_proof (void) {$/;"	f
+free_clauses_set_m	clauses.c	/^void free_clauses_set_m (hml_mclauses **set) {$/;"	f
+free_clauses_set_m_snf_minus	snf--.c	/^void free_clauses_set_m_snf_minus (hml_mclauses **set) {$/;"	f
+free_clauses_set_m_snf_plus	snf++.c	/^void free_clauses_set_m_snf_plus (hml_mclauses **set) {$/;"	f
+free_clauses_set_p	clauses.c	/^void free_clauses_set_p(hml_pclauses **set) {$/;"	f
+free_clausesid	symbol_table.c	/^void free_clausesid(clausesid *clauses) {$/;"	f
+free_disjunction	clauses.c	/^literalslist *free_disjunction(literalslist *dis) {$/;"	f
+free_formulalist	tree.c	/^formulalist *free_formulalist(formulalist *s) {$/;"	f
+free_hml_clauses	symbol_table.c	/^void free_hml_clauses (hml_clauses *hclauses) {$/;"	f
+free_justification	clauses.c	/^justification *free_justification (justification *just) {$/;"	f
+free_literal_list	clauses.c	/^literal_list *free_literal_list(literal_list *dis) {$/;"	f
+free_pnode	symbol_table.c	/^prop_node *free_pnode(prop_node *p) {$/;"	f
+free_tnode	tree.c	/^tnode *free_tnode(tnode *t) {$/;"	f
+free_tree	tree.c	/^tnode *free_tree (tnode *s) {$/;"	f
+full_check_repeated	prover.c	/^int full_check_repeated = OFF;$/;"	v
+gen2	prover.c	/^int gen2 = OFF;$/;"	v
+generate_model	model.c	/^void generate_model(){}$/;"	f
+get16bits	uthash.h	580;"	d
+get16bits	uthash.h	583;"	d
+get16bits	uthash.h	587;"	d
+getBoxName	parser.tab.c	/^char *getBoxName(char *diamond) {$/;"	f
+get_antiprenex	antiprenex.c	/^tnode *get_antiprenex(tnode *s) {$/;"	f
+get_clause	clauses.c	/^tclause *get_clause (int clause) {$/;"	f
+get_clause_x	clauses.c	/^tclause *get_clause_x (int clause) {$/;"	f
+get_cnf	input_preprocessing.c	/^tnode *get_cnf(tnode *t) {$/;"	f
+get_disjunction	snf.c	/^literal_list *get_disjunction(tnode *s) {$/;"	f
+get_literal_list	snf.c	/^literal_list *get_literal_list(formulalist *l) {$/;"	f
+get_nnf	nnf_bnf.c	/^tnode *get_nnf(tnode *s, int modal_level, int polarity, int stat) {$/;"	f
+get_nnfsimp	nnf_bnf_simp.c	/^tnode *get_nnfsimp (tnode *s) {$/;"	f
+get_nnfsimp	nnf_simp.c	/^tnode *get_nnfsimp (tnode *s) {$/;"	f
+get_prenex	prenex.c	/^tnode *get_prenex(tnode *s) {$/;"	f
+get_small_cnf	small_cnf.c	/^tnode *get_small_cnf(tnode *s) {$/;"	f
+get_snf	snf.c	/^int get_snf(int set, int subtype, int modal_level, tnode *s) {$/;"	f
+get_snf_list	snf.c	/^formulalist *get_snf_list(int type, int set, int subtype, int modal_level, formulalist *l) {$/;"	f
+get_snf_modal	snf.c	/^tnode *get_snf_modal(int type, int set, int subtype, int modal_level, tnode *t) {$/;"	f
+global	prover.c	/^int global = OFF;$/;"	v
+hag	model.h	/^    UT_hash_handle hag;$/;"	m	struct:hagbranches
+hagbranches	model.h	/^typedef struct hagbranches{$/;"	s
+hagbranches	model.h	/^}hagbranches;$/;"	t	typeref:struct:hagbranches
+hagentclauses	clauses.h	/^typedef struct hagentclauses {$/;"	s
+hagentclauses	clauses.h	/^} hagentclauses;$/;"	t	typeref:struct:hagentclauses
+hash_list	renaming.c	/^unsigned int hash_list (formulalist *l) {$/;"	f
+hash_tree	renaming.c	/^unsigned int hash_tree (tnode *t) {$/;"	f
+hashv	uthash.h	/^   unsigned hashv;                   \/* result of hash-fcn(key)        *\/$/;"	m	struct:UT_hash_handle
+hclauses	clauses.h	/^typedef struct hclauses {$/;"	s
+hclauses	clauses.h	/^} hclauses;$/;"	t	typeref:struct:hclauses
+head	model.h	/^    int head;$/;"	m	struct:headlist
+headlist	model.h	/^typedef struct headlist {$/;"	s
+headlist	model.h	/^}headlist;$/;"	t	typeref:struct:headlist
+heads	model.h	/^    headlist* heads;$/;"	m	struct:htype
+hh	model.h	/^    UT_hash_handle hh;$/;"	m	struct:headlist
+hh	model.h	/^    UT_hash_handle hh;$/;"	m	struct:literalshash
+hh	symbol_table.h	/^  UT_hash_handle hh;$/;"	m	struct:agent_node
+hh	symbol_table.h	/^  UT_hash_handle hh;$/;"	m	struct:prop_node
+hh_head	uthash.h	/^   struct UT_hash_handle *hh_head;$/;"	m	struct:UT_hash_bucket	typeref:struct:UT_hash_bucket::UT_hash_handle
+hh_next	uthash.h	/^   struct UT_hash_handle *hh_next;   \/* next hh in bucket order        *\/$/;"	m	struct:UT_hash_handle	typeref:struct:UT_hash_handle::UT_hash_handle
+hh_prev	uthash.h	/^   struct UT_hash_handle *hh_prev;   \/* previous hh in bucket order    *\/$/;"	m	struct:UT_hash_handle	typeref:struct:UT_hash_handle::UT_hash_handle
+hho	uthash.h	/^   ptrdiff_t hho; \/* hash handle offset (byte pos of hash handle in element *\/$/;"	m	struct:UT_hash_table
+hid	clauses.h	/^  UT_hash_handle hid;$/;"	m	struct:hagentclauses
+hid	clauses.h	/^  UT_hash_handle hid;$/;"	m	struct:hclauses
+hid	model.h	/^    UT_hash_handle hid;$/;"	m	struct:hidbranches
+hid	symbol_table.h	/^  UT_hash_handle hid;$/;"	m	struct:agent_node
+hid	symbol_table.h	/^  UT_hash_handle hid;$/;"	m	struct:clausesid
+hid	symbol_table.h	/^  UT_hash_handle hid;$/;"	m	struct:prop_node
+hidbranches	model.h	/^typedef struct hidbranches{$/;"	s
+hidbranches	model.h	/^}hidbranches;$/;"	t	typeref:struct:hidbranches
+hmax	clauses.h	/^  UT_hash_handle hmax;$/;"	m	struct:hmaxclauses
+hmax	clauses.h	/^  UT_hash_handle hmax;$/;"	m	struct:hmaxlitclauses
+hmax	model.h	/^    UT_hash_handle hmax;$/;"	m	struct:hmaxbranches
+hmaxbranches	model.h	/^typedef struct hmaxbranches {$/;"	s
+hmaxbranches	model.h	/^}hmaxbranches;$/;"	t	typeref:struct:hmaxbranches
+hmaxclauses	clauses.h	/^typedef struct hmaxclauses {$/;"	s
+hmaxclauses	clauses.h	/^} hmaxclauses;$/;"	t	typeref:struct:hmaxclauses
+hmaxlitclauses	clauses.h	/^typedef struct hmaxlitclauses {$/;"	s
+hmaxlitclauses	clauses.h	/^} hmaxlitclauses;$/;"	t	typeref:struct:hmaxlitclauses
+hmin	model.h	/^    UT_hash_handle hmin;$/;"	m	struct:hminbranches
+hminbranches	model.h	/^typedef struct hminbranches {$/;"	s
+hminbranches	model.h	/^}hminbranches;$/;"	t	typeref:struct:hminbranches
+hml	clauses.h	/^  UT_hash_handle hml;$/;"	m	struct:hml_mclauses
+hml	clauses.h	/^  UT_hash_handle hml;$/;"	m	struct:hml_pclauses
+hml	model.h	/^    UT_hash_handle hml;$/;"	m	struct:hmlbranches
+hml	model.h	/^    UT_hash_handle hml;$/;"	m	struct:hmlliterals
+hml	symbol_table.h	/^  UT_hash_handle hml;$/;"	m	struct:hml_clauses
+hml	symbol_table.h	/^  UT_hash_handle hml;$/;"	m	struct:hml_props
+hml_clauses	symbol_table.h	/^typedef struct hml_clauses {$/;"	s
+hml_clauses	symbol_table.h	/^} hml_clauses;$/;"	t	typeref:struct:hml_clauses
+hml_mclauses	clauses.h	/^typedef struct hml_mclauses {$/;"	s
+hml_mclauses	clauses.h	/^} hml_mclauses;$/;"	t	typeref:struct:hml_mclauses
+hml_pclauses	clauses.h	/^typedef struct hml_pclauses {$/;"	s
+hml_pclauses	clauses.h	/^} hml_pclauses;$/;"	t	typeref:struct:hml_pclauses
+hml_pclauses_list	t_processing.c	/^typedef struct hml_pclauses_list {$/;"	s	file:
+hml_pclauses_list	t_processing.c	/^} hml_pclauses_list;$/;"	t	typeref:struct:hml_pclauses_list	file:
+hml_props	symbol_table.h	/^typedef struct hml_props {$/;"	s
+hml_props	symbol_table.h	/^} hml_props;$/;"	t	typeref:struct:hml_props
+hmlbranches	model.h	/^typedef struct hmlbranches{$/;"	s
+hmlbranches	model.h	/^}hmlbranches;$/;"	t	typeref:struct:hmlbranches
+hmlliterals	model.h	/^typedef struct hmlliterals{$/;"	s
+hmlliterals	model.h	/^}hmlliterals;$/;"	t	typeref:struct:hmlliterals
+hmlpropsposition	symbol_table.h	/^  hml_props *hmlpropsposition;$/;"	m	struct:prop_node
+hptr	symbol_table.h	/^  UT_hash_handle hptr;$/;"	m	struct:hptr_nodes
+hptr_nodes	symbol_table.h	/^typedef struct hptr_nodes {$/;"	s
+hptr_nodes	symbol_table.h	/^} hptr_nodes;$/;"	t	typeref:struct:hptr_nodes
+hren	renaming.c	/^  UT_hash_handle hren;$/;"	m	struct:ren_hash	file:
+hsize	clauses.h	/^  UT_hash_handle hsize;$/;"	m	struct:hsizeclauses
+hsizeclauses	clauses.h	/^typedef struct hsizeclauses {$/;"	s
+hsizeclauses	clauses.h	/^} hsizeclauses;$/;"	t	typeref:struct:hsizeclauses
+htp	model.h	/^    UT_hash_handle htp;$/;"	m	struct:htype
+htype	clauses.h	/^  UT_hash_handle htype;$/;"	m	struct:htypeclauses
+htype	model.h	/^typedef struct htype{$/;"	s
+htype	model.h	/^}htype;$/;"	t	typeref:struct:htype
+htypeclauses	clauses.h	/^typedef struct htypeclauses {$/;"	s
+htypeclauses	clauses.h	/^} htypeclauses;$/;"	t	typeref:struct:htypeclauses
+i_sos	clauses.c	/^hml_pclauses *i_sos = NULL;$/;"	v
+i_usable	clauses.c	/^hml_pclauses *i_usable = NULL;$/;"	v
+id	clauses.h	/^  hagentclauses *id;$/;"	m	struct:hml_mclauses
+id	clauses.h	/^  int id;$/;"	m	struct:hagentclauses
+id	clauses.h	/^  int id;$/;"	m	struct:hclauses
+id	model.h	/^    unsigned int id;$/;"	m	struct:hidbranches
+id	model.h	/^    unsigned int id;$/;"	m	struct:tbranch
+id	symbol_table.h	/^  int id;$/;"	m	struct:agent_node
+id	symbol_table.h	/^  int id;$/;"	m	struct:clausesid
+id	symbol_table.h	/^  int id;$/;"	m	struct:prop_node
+id	tree.h	/^  int id;$/;"	m	struct:tnode
+id_branch	branch.c	/^int id_branch = 0;$/;"	v
+id_model	model.c	/^int id_model = 0;$/;"	v
+id_world	model.c	/^int id_world = 0;$/;"	v
+ideal_chain_maxlen	uthash.h	/^   unsigned ideal_chain_maxlen;$/;"	m	struct:UT_hash_table
+if_pos	small_cnf.c	/^int if_pos(int x, int y) {$/;"	f
+improved_snf_plus	prover.c	/^int improved_snf_plus = OFF;$/;"	v
+in	nnf_bnf_simp.c	/^int in (tnode *t1, formulalist *l) {$/;"	f
+in	nnf_simp.c	/^int in (tnode *t1, formulalist *l) {$/;"	f
+in_conjunction_or_disjunction	nnf_bnf_simp.c	/^formulalist *in_conjunction_or_disjunction(int type, tnode *formula, formulalist *l) {$/;"	f
+in_conjunction_or_disjunction	nnf_simp.c	/^formulalist *in_conjunction_or_disjunction(int type, tnode *formula, formulalist *l) {$/;"	f
+in_diamond	nnf_bnf_simp.c	/^int in_diamond(formulalist *l, int id) {$/;"	f
+in_diamond	nnf_simp.c	/^int in_diamond(formulalist *l, int id) {$/;"	f
+in_diamond_true	nnf_bnf_simp.c	/^int in_diamond_true (formulalist *l, int id) {$/;"	f
+in_diamond_true	nnf_simp.c	/^int in_diamond_true (formulalist *l, int id) {$/;"	f
+in_neg	nnf_bnf_simp.c	/^int in_neg (tnode *t1, formulalist *l) {$/;"	f
+in_neg	nnf_simp.c	/^int in_neg (tnode *t1, formulalist *l) {$/;"	f
+in_neg_box	nnf_bnf_simp.c	/^int in_neg_box(tnode *t1, formulalist *l) {$/;"	f
+in_neg_box	nnf_simp.c	/^int in_neg_box(tnode *t1, formulalist *l) {$/;"	f
+in_neg_dia	nnf_bnf_simp.c	/^int in_neg_dia(tnode *t1, formulalist *l) {$/;"	f
+in_neg_dia	nnf_simp.c	/^int in_neg_dia(tnode *t1, formulalist *l) {$/;"	f
+indentation	tree.c	/^int indentation = 1;$/;"	v
+ineff_expands	uthash.h	/^   unsigned ineff_expands, noexpand;$/;"	m	struct:UT_hash_table
+initial_clause	parser.y	/^initial_clause : TSTART TIMPLY disjunction_literals  %prec TIMPLY$/;"	l
+input_preprocessing	input_preprocessing.c	/^tnode *input_preprocessing(tnode *root) {$/;"	f
+input_simplification	input_preprocessing.c	/^tnode *input_simplification (tnode *root) {$/;"	f
+inputsize	parser.tab.c	/^  int inputsize = 0;$/;"	v
+insert_a_node	symbol_table.c	/^agent_node *insert_a_node (char *name) {$/;"	f
+insert_clause_all	clauses.c	/^void insert_clause_all(tclause *clause) {$/;"	f
+insert_clause_deleted	clauses.c	/^void insert_clause_deleted(tclause *clause) {$/;"	f
+insert_clause_list	clauses.c	/^clauseslist *insert_clause_list(tclause **c, clauseslist *l) {$/;"	f
+insert_clause_modal	clauses.c	/^void insert_clause_modal (tclause **clause, hml_mclauses **set) {$/;"	f
+insert_clause_p_node	symbol_table.c	/^void insert_clause_p_node (prop_node *p, int modal_level, int polarity, int idclause) {$/;"	f
+insert_clause_proofs	clauses.c	/^void insert_clause_proofs (tclause *clause) {$/;"	f
+insert_clause_prop	clauses.c	/^void insert_clause_prop (tclause **clause, hml_pclauses **set) {$/;"	f
+insert_clause_selection	clauses.c	/^void insert_clause_selection (tclause *clause, hml_pclauses **set) {$/;"	f
+insert_clause_set	clauses.c	/^void insert_clause_set (tclause **clause, int type, int set) {$/;"	f
+insert_formula_renaming	small_cnf.c	/^formulalist *insert_formula_renaming(tnode *formula, formulalist *r) {$/;"	f
+insert_hml_props	input_preprocessing.c	/^prop_node *insert_hml_props(int type, int ml, prop_node *p, tnode *node) {$/;"	f
+insert_p_node	symbol_table.c	/^prop_node *insert_p_node (char *name) {$/;"	f
+insert_p_position	symbol_table.c	/^prop_node *insert_p_position(prop_node *p, tnode *position) {$/;"	f
+insert_pnew_node	symbol_table.c	/^prop_node *insert_pnew_node (int id, int type) {$/;"	f
+insert_pos_node	symbol_table.c	/^prop_node *insert_pos_node (char *name) {$/;"	f
+insert_renaming_table	renaming.c	/^int insert_renaming_table(ren_key key, tnode *formula, int type, int set, int subtype, int modal_level) {$/;"	f
+interleave_ires	prover.c	/^int interleave_ires = OFF;$/;"	v
+ires	prover.c	/^int ires = OFF;$/;"	v
+is_box	tree.c	/^int is_box (tnode *t) {$/;"	f
+is_diamond	tree.c	/^int is_diamond (tnode *t) {$/;"	f
+is_literal	tree.c	/^int is_literal (tnode *t) {$/;"	f
+is_modal_term	antiprenex.c	/^int is_modal_term(tnode *s) {$/;"	f
+just	symbol_table.h	/^  struct justification *just;$/;"	m	struct:tclause	typeref:struct:tclause::justification
+justification	symbol_table.h	/^typedef struct justification {$/;"	s
+justification	symbol_table.h	/^} justification;$/;"	t	typeref:struct:justification
+key	renaming.c	/^  ren_key key;$/;"	m	struct:ren_hash	file:
+key	uthash.h	/^   void *key;                        \/* ptr to enclosing struct's key  *\/$/;"	m	struct:UT_hash_handle
+keylen	uthash.h	/^   unsigned keylen;                  \/* enclosing struct's key len     *\/$/;"	m	struct:UT_hash_handle
+kill_at_proof	prover.c	/^int kill_at_proof = OFF;$/;"	v
+l_sos	clauses.c	/^hml_pclauses *l_sos = NULL;$/;"	v
+l_usable	clauses.c	/^hml_pclauses *l_usable = NULL;$/;"	v
+last_selection	clauses.h	/^  clauseslist *last_selection; \/\/ this is just a pointer for the last element in list_selection $/;"	m	struct:hml_pclauses
+left	symbol_table.h	/^  int left;$/;"	m	struct:tclause
+left	tree.h	/^  struct tnode *left;$/;"	m	struct:tnode	typeref:struct:tnode::tnode
+lhs_unit	prover.c	/^int lhs_unit = OFF;$/;"	v
+linearise	lex.yy.c	/^int linearise = 0;$/;"	v
+list	clauses.h	/^  clauseslist *list;$/;"	m	struct:hmaxlitclauses
+list	clauses.h	/^  clauseslist *list;$/;"	m	struct:hsizeclauses
+list	renaming.c	/^  formulalist *list;$/;"	m	struct:ren_hash	file:
+list	tree.h	/^  struct formulalist *list;$/;"	m	struct:tnode	typeref:struct:tnode::formulalist
+list_hash	renaming.c	/^formulalist *list_hash(formulalist *l) {$/;"	f
+list_selection	clauses.h	/^  clauseslist *list_selection;$/;"	m	struct:hml_pclauses
+listsclauseslist	gen1.c	/^typedef struct listsclauseslist {$/;"	s	file:
+listsclauseslist	gen1.c	/^} listsclauseslist;$/;"	t	typeref:struct:listsclauseslist	file:
+listsclauseslist	gen3.c	/^typedef struct listsclauseslist {$/;"	s	file:
+listsclauseslist	gen3.c	/^} listsclauseslist;$/;"	t	typeref:struct:listsclauseslist	file:
+lit	clauses.h	/^  hmaxlitclauses *lit;$/;"	m	struct:htypeclauses
+lit_srt	branch.c	/^int lit_srt(literalshash *a, literalshash *b){$/;"	f
+literal	model.h	/^    int literal;$/;"	m	struct:literalshash
+literal	parser.y	/^literal : proposition {$$ = $1;}$/;"	l
+literal	symbol_table.h	/^  int literal;$/;"	m	struct:literalslist
+literal	symbol_table.h	/^  struct tnode *literal;$/;"	m	struct:literal_list	typeref:struct:literal_list::tnode
+literal_clause	parser.y	/^literal_clause : TTRUE TIMPLY disjunction_literals %prec TIMPLY$/;"	l
+literal_list	symbol_table.h	/^typedef struct literal_list {$/;"	s
+literal_list	symbol_table.h	/^} literal_list;$/;"	t	typeref:struct:literal_list
+literal_selection	prover.c	/^int literal_selection = SATURATE; $/;"	v
+literals	model.h	/^    literalshash *literals;$/;"	m	struct:headlist
+literals	model.h	/^    struct literalshash *literals;$/;"	m	struct:tbranch	typeref:struct:tbranch::literalshash
+literals	symbol_table.h	/^  struct literalslist *literals;$/;"	m	struct:justification	typeref:struct:justification::literalslist
+literalshash	model.h	/^typedef struct literalshash{$/;"	s
+literalshash	model.h	/^}literalshash;$/;"	t	typeref:struct:literalshash
+literalslist	symbol_table.h	/^typedef struct literalslist {$/;"	s
+literalslist	symbol_table.h	/^} literalslist;$/;"	t	typeref:struct:literalslist
+literalslist_cmp	branch.c	/^int literalslist_cmp(struct literalshash *l1, struct literalshash *l2){$/;"	f
+litmax	model.h	/^    hmaxbranches *litmax;$/;"	m	struct:hminbranches
+log2_num_buckets	uthash.h	/^   unsigned num_buckets, log2_num_buckets;$/;"	m	struct:UT_hash_table
+m_sos	clauses.c	/^hml_mclauses *m_sos = NULL;$/;"	v
+m_usable	clauses.c	/^hml_mclauses *m_usable = NULL;$/;"	v
+main	prover.c	/^int main(int argc, char* argv[]){$/;"	f
+max	clauses.h	/^  hmaxclauses *max;$/;"	m	struct:hml_pclauses
+max	clauses.h	/^  int max;$/;"	m	struct:hmaxclauses
+max	clauses.h	/^  int max;$/;"	m	struct:hmaxlitclauses
+max	model.h	/^    int max;$/;"	m	struct:hmaxbranches
+max_lit_clause	snf.c	/^int max_lit_clause (literalslist *l) {$/;"	f
+max_literal	symbol_table.h	/^  int max_literal;$/;"	m	struct:tclause
+maxproof	prover.c	/^int maxproof = 1;$/;"	v
+mdepth	prover.c	/^int mdepth;$/;"	v
+mdepth	tree.h	/^  int mdepth;$/;"	m	struct:formulalist
+mdepth	tree.h	/^  int mdepth;$/;"	m	struct:tnode
+mild_renaming	prover.c	/^int mild_renaming = OFF;             $/;"	v
+min	model.h	/^    int min;$/;"	m	struct:hminbranches
+min_literal	symbol_table.h	/^  int min_literal;$/;"	m	struct:tclause
+ml	clauses.h	/^  int ml;$/;"	m	struct:hml_mclauses
+ml	clauses.h	/^  int ml;$/;"	m	struct:hml_pclauses
+ml	model.h	/^    int ml; \/* modal level *\/$/;"	m	struct:tbranch
+ml	model.h	/^    int ml;$/;"	m	struct:hmlbranches
+ml	model.h	/^    int ml;$/;"	m	struct:hmlliterals
+ml	renaming.c	/^  int ml;$/;"	m	struct:__anon3	file:
+ml	symbol_table.h	/^  int ml;$/;"	m	struct:hml_clauses
+ml	symbol_table.h	/^  int ml;$/;"	m	struct:hml_props
+ml	t_processing.c	/^  hml_pclauses *ml;$/;"	m	struct:hml_pclauses_list	file:
+ml	t_processing.c	/^  hml_pclauses_list *ml;$/;"	m	struct:pthread_list	file:
+ml_branches	model.c	/^int ml_branches(hmlbranches *a, hmlbranches *b){$/;"	f
+ml_occur_negative	symbol_table.h	/^  int ml_occur_negative;$/;"	m	struct:hml_props
+ml_occur_positive	symbol_table.h	/^  int ml_occur_positive;$/;"	m	struct:hml_props
+ml_ple	prover.c	/^int ml_ple = OFF;$/;"	v
+ml_prover	prover.c	/^int ml_prover = ON;$/;"	v
+ml_sort	model.c	/^int ml_sort(hml_mclauses *a, hml_mclauses *b){$/;"	f
+ml_srt_gt	processing.c	/^int ml_srt_gt(hml_pclauses *a, hml_pclauses *b) {$/;"	f
+ml_srt_lt	processing.c	/^int ml_srt_lt(hml_pclauses *a, hml_pclauses *b) {$/;"	f
+mlbranches	branch.c	/^hmlbranches *mlbranches = NULL;$/;"	v
+mle	prover.c	/^int mle = OFF;$/;"	v
+mlevel	tree.h	/^  int mlevel;$/;"	m	struct:formulalist
+mlevel	tree.h	/^  int mlevel;$/;"	m	struct:tnode
+mlliterals	branch.c	/^hmlliterals *mlliterals = NULL;$/;"	v
+modal_arg	parser.y	/^modal_arg : TNUMBER $/;"	l
+modal_clause	parser.y	/^modal_clause : literal TIMPLY TNECESSARY modal_arg literal$/;"	l
+modal_level	symbol_table.h	/^  int modal_level;$/;"	m	struct:tclause
+modal_level_elimination	preprocessing.c	/^int modal_level_elimination (void) {$/;"	f
+modal_level_ple	preprocessing.c	/^int modal_level_ple (void) {$/;"	f
+modal_levels	branch.c	/^int modal_levels[1000];$/;"	v
+modal_negative	prover.c	/^int modal_negative = OFF;$/;"	v
+modal_positive	prover.c	/^int modal_positive = OFF;$/;"	v
+move_clause_modal	processing.c	/^void move_clause_modal(tclause *c, hml_mclauses **set_out, hml_mclauses **set_in) {$/;"	f
+move_clause_propositional	processing.c	/^void move_clause_propositional(tclause *c, hml_pclauses **set_out, hml_pclauses **set_in) {$/;"	f
+mres	prover.c	/^int mres = OFF;$/;"	v
+mutexallclauses	prover.c	/^pthread_mutex_t mutexallclauses;$/;"	v
+mutexdeletedclauses	prover.c	/^pthread_mutex_t mutexdeletedclauses;$/;"	v
+mutexnumbsubsumed	prover.c	/^pthread_mutex_t mutexnumbsubsumed;$/;"	v
+mutexnumclause	prover.c	/^pthread_mutex_t mutexnumclause;$/;"	v
+mutexnumfsubsumed	prover.c	/^pthread_mutex_t mutexnumfsubsumed;$/;"	v
+mutexnumproofs	prover.c	/^pthread_mutex_t mutexnumproofs;$/;"	v
+mutexnumtautologies	prover.c	/^pthread_mutex_t mutexnumtautologies;$/;"	v
+mutexpnodes	prover.c	/^pthread_mutex_t mutexpnodes;$/;"	v
+mutexproofs	prover.c	/^pthread_mutex_t mutexproofs;$/;"	v
+mutexprops	prover.c	/^pthread_mutex_t mutexprops;$/;"	v
+name	symbol_table.h	/^  char *name; \/\/this is the concat of name and index of the modal operator$/;"	m	struct:agent_node
+name	symbol_table.h	/^  char *name;$/;"	m	struct:prop_node
+nbel	small_cnf.c	/^int nbel(tnode *formula) {$/;"	f
+negative	symbol_table.h	/^  clausesid *negative;$/;"	m	struct:hml_clauses
+negative	symbol_table.h	/^  literal_list *negative;$/;"	m	struct:hml_props
+newtemp	prover.c	/^int newtemp; \/\/ number of new propositional symbols$/;"	v
+next	gen1.c	/^  struct listsclauseslist *next;$/;"	m	struct:listsclauseslist	typeref:struct:listsclauseslist::listsclauseslist	file:
+next	gen3.c	/^  struct listsclauseslist *next;$/;"	m	struct:listsclauseslist	typeref:struct:listsclauseslist::listsclauseslist	file:
+next	model.h	/^    struct brancheslist *next;$/;"	m	struct:brancheslist	typeref:struct:brancheslist::brancheslist
+next	parser.tab.h	/^    struct axiom_list *next;$/;"	m	struct:axiom_list	typeref:struct:axiom_list::axiom_list
+next	parser.tab.h	/^    struct prop_list *next;$/;"	m	struct:prop_list	typeref:struct:prop_list::prop_list
+next	snf++.c	/^  struct clauseslistsnfplus *next;$/;"	m	struct:clauseslistsnfplus	typeref:struct:clauseslistsnfplus::clauseslistsnfplus	file:
+next	snf--.c	/^  struct clauseslistsnfminus *next;$/;"	m	struct:clauseslistsnfminus	typeref:struct:clauseslistsnfminus::clauseslistsnfminus	file:
+next	symbol_table.h	/^  struct clauseslist *next;$/;"	m	struct:clauseslist	typeref:struct:clauseslist::clauseslist
+next	symbol_table.h	/^  struct literal_list *next;$/;"	m	struct:literal_list	typeref:struct:literal_list::literal_list
+next	symbol_table.h	/^  struct literalslist *next;$/;"	m	struct:literalslist	typeref:struct:literalslist::literalslist
+next	t_processing.c	/^  struct hml_pclauses_list *next;$/;"	m	struct:hml_pclauses_list	typeref:struct:hml_pclauses_list::hml_pclauses_list	file:
+next	t_processing.c	/^  struct pthread_list *next;$/;"	m	struct:pthread_list	typeref:struct:pthread_list::pthread_list	file:
+next	tree.h	/^  struct formulalist *next;$/;"	m	struct:formulalist	typeref:struct:formulalist::formulalist
+next	uthash.h	/^   void *next;                       \/* next element in app order      *\/$/;"	m	struct:UT_hash_handle
+nnfsimp	prover.c	/^int nnfsimp = OFF;$/;"	v
+node	symbol_table.h	/^  struct tnode *node;$/;"	m	struct:hptr_nodes	typeref:struct:hptr_nodes::tnode
+noexpand	uthash.h	/^   unsigned ineff_expands, noexpand;$/;"	m	struct:UT_hash_table
+nonideal_items	uthash.h	/^   unsigned nonideal_items;$/;"	m	struct:UT_hash_table
+normal_renaming	prover.c	/^int normal_renaming = ON;$/;"	v
+npfunction	tree.h	/^  int npfunction;$/;"	m	struct:tnode
+num_buckets	uthash.h	/^   unsigned num_buckets, log2_num_buckets;$/;"	m	struct:UT_hash_table
+num_improved	snf++.c	/^int num_improved = 0;$/;"	v
+num_items	uthash.h	/^   unsigned num_items;$/;"	m	struct:UT_hash_table
+numagents	parser.tab.c	/^  int numagents = 1;$/;"	v
+number	symbol_table.h	/^  int number;$/;"	m	struct:tclause
+numbsubsumed	prover.c	/^int numbsubsumed = 0;$/;"	v
+numclause	prover.c	/^int numclause = 1;$/;"	v
+numcolumns	lex.yy.c	/^int numcolumns = 1;$/;"	v
+numctepropagated	prover.c	/^int numctepropagated = 0;$/;"	v
+numdiamond	nnf_bnf.c	/^int numdiamond = BOX + 1;$/;"	v
+numdiamond	symbol_table.h	/^  int numdiamond; \/\/this is needed to record the number of the diamond$/;"	m	struct:tclause
+numdiamond	tree.h	/^  int numdiamond;$/;"	m	struct:tnode
+numearlymlple	prover.c	/^int numearlymlple = 0;$/;"	v
+numearlyple	prover.c	/^int numearlyple = 0;$/;"	v
+numerrors	parser.tab.c	/^  int numerrors = 0;  $/;"	v
+numfsubsumed	prover.c	/^int numfsubsumed = 0;$/;"	v
+numlines	lex.yy.c	/^int numlines = 1;$/;"	v
+nummle	prover.c	/^int nummle = 0;$/;"	v
+nummlple	prover.c	/^int nummlple = 0;$/;"	v
+numple	prover.c	/^int numple = 0;$/;"	v
+numproofs	prover.c	/^int numproofs = 0;$/;"	v
+numpropagateunique	prover.c	/^int numpropagateunique = 0;$/;"	v
+numprops	parser.tab.c	/^  int numprops = 2; \/\/ 1 and -1 are reserved for CTRUE an CFALSE, 0 is reserved for CSTART$/;"	v
+numsat	prover.c	/^int numsat = 0;$/;"	v
+numsimp	prover.c	/^int numsimp = 0;$/;"	v
+numtautologies	prover.c	/^int numtautologies = 0;$/;"	v
+numtokens	lex.yy.c	/^int numtokens = 0;$/;"	v
+occur	symbol_table.h	/^  int occur;$/;"	m	struct:agent_node
+occur	symbol_table.h	/^  int occur;$/;"	m	struct:prop_node
+occur_negative	symbol_table.h	/^  int occur_negative;$/;"	m	struct:hml_clauses
+occur_negative	symbol_table.h	/^  int occur_negative;$/;"	m	struct:prop_node
+occur_positive	symbol_table.h	/^  int occur_positive;$/;"	m	struct:hml_clauses
+occur_positive	symbol_table.h	/^  int occur_positive;$/;"	m	struct:prop_node
+operator	renaming.c	/^  int operator;$/;"	m	struct:__anon3	file:
+option	parser.y	/^option : TNAME$/;"	l
+order_level	prover.c	/^int order_level = NONE;$/;"	v
+out	prover.c	/^FILE *out;$/;"	v
+pair_t	model.h	/^typedef struct pair_t pair_t;$/;"	t	typeref:struct:pair_t
+parallel_prover	prover.c	/^int parallel_prover = OFF;$/;"	v
+parent	tree.h	/^  struct tnode *parent;$/;"	m	struct:formulalist	typeref:struct:formulalist::tnode
+parent	tree.h	/^  struct tnode *parent;$/;"	m	struct:tnode	typeref:struct:tnode::tnode
+parents	symbol_table.h	/^  struct clauseslist *parents;$/;"	m	struct:justification	typeref:struct:justification::clauseslist
+pfunction	tree.h	/^  int pfunction;$/;"	m	struct:tnode
+phase	prover.c	/^int phase = 0;$/;"	v
+pl_sort	model.c	/^int pl_sort(hml_pclauses *a, hml_pclauses *b){$/;"	f
+ple	prover.c	/^int ple = OFF;$/;"	v
+pol	small_cnf.c	/^int pol(tnode *sub, tnode *formula) {$/;"	f
+polarity	tree.h	/^  int polarity;$/;"	m	struct:tnode
+populate	preprocessing.c	/^void populate(void) {$/;"	f
+populate_usable	prover.c	/^int populate_usable = OFF;$/;"	v
+positions	symbol_table.h	/^  hptr_nodes *positions;$/;"	m	struct:prop_node
+positive	symbol_table.h	/^  clausesid *positive;$/;"	m	struct:hml_clauses
+positive	symbol_table.h	/^  literal_list *positive;$/;"	m	struct:hml_props
+prenex	prover.c	/^int prenex = OFF;$/;"	v
+preprocess_axioms	preprocessing.c	/^void preprocess_axioms(void) {$/;"	f
+preprocessing	preprocessing.c	/^void preprocessing (void) {$/;"	f
+prev	uthash.h	/^   void *prev;                       \/* prev element in app order      *\/$/;"	m	struct:UT_hash_handle
+print_agent	symbol_table.c	/^void print_agent (int id) {$/;"	f
+print_all	clauses.c	/^void print_all (void) {$/;"	f
+print_all_proof	clauses.c	/^void print_all_proof(tclause *proof) {$/;"	f
+print_branch	branch.c	/^void print_branch(){$/;"	f
+print_candidates	gen3.c	/^void print_candidates(listsclauseslist *aux) {$/;"	f
+print_clause	output.c	/^void print_clause(tclause *clause) {$/;"	f
+print_clauses	clauses.c	/^void print_clauses (void) {$/;"	f
+print_deleted	prover.c	/^int print_deleted = OFF;$/;"	v
+print_deleted_clauses	clauses.c	/^void print_deleted_clauses (void) {$/;"	f
+print_dimacs	clauses.c	/^void print_dimacs (literalslist *literals) {$/;"	f
+print_dimacs_pclauses	clauses.c	/^void print_dimacs_pclauses (hml_pclauses *set) {$/;"	f
+print_disjunction	output.c	/^void print_disjunction(literalslist *s) {$/;"	f
+print_generated	prover.c	/^int print_generated = OFF;$/;"	v
+print_justification	output.c	/^void print_justification (justification *just) {$/;"	f
+print_list	tree.c	/^int print_list(formulalist *s) {$/;"	f
+print_literal	output.c	/^void print_literal(int lit) {$/;"	f
+print_literals	output.c	/^void print_literals (literalslist *literals) {$/;"	f
+print_literalslist	branch.c	/^void print_literalslist(literalshash *list){$/;"	f
+print_mclauses	clauses.c	/^void print_mclauses (hml_mclauses *set) {$/;"	f
+print_out	output.c	/^void print_out (char *phase) {$/;"	f
+print_parents	output.c	/^void print_parents (clauseslist *parents) {$/;"	f
+print_pclauses	clauses.c	/^void print_pclauses (hml_pclauses *set) {$/;"	f
+print_positions	symbol_table.c	/^void print_positions (hptr_nodes *positions) {$/;"	f
+print_proof	prover.c	/^int print_proof = OFF;$/;"	v
+print_proofs	clauses.c	/^void print_proofs (void) {$/;"	f
+print_prop	symbol_table.c	/^void print_prop (int id) {$/;"	f
+print_ren_hash	renaming.c	/^void print_ren_hash(void) {$/;"	f
+print_short	output.c	/^void print_short(int cycle) {$/;"	f
+print_sos	clauses.c	/^void print_sos (void) {$/;"	f
+print_symbols_tables	symbol_table.c	/^void print_symbols_tables(void) {$/;"	f
+print_tree	tree.c	/^int print_tree(tnode *s) {  $/;"	f
+print_usable	clauses.c	/^void print_usable (void) {$/;"	f
+process_by_level	prover.c	/^int process_by_level = OFF;$/;"	v
+process_ordering	parser.tab.c	/^void process_ordering(prop_list *props) {$/;"	f
+processing	processing.c	/^int processing (int cycle) {$/;"	f
+processing_by_level	processing.c	/^int processing_by_level(int cycle) {$/;"	f
+processors	prover.c	/^int processors = 1;$/;"	v
+proofs	clauses.c	/^hclauses *proofs = NULL;$/;"	v
+prop	parser.tab.h	/^    char *prop;$/;"	m	struct:prop_list
+prop_list	parser.tab.h	/^  prop_list *prop_list;$/;"	m	union:YYSTYPE
+prop_list	parser.tab.h	/^  typedef struct prop_list {$/;"	s
+prop_list	parser.tab.h	/^  } prop_list;$/;"	t	typeref:struct:prop_list
+prop_node	symbol_table.h	/^typedef struct prop_node {$/;"	s
+prop_node	symbol_table.h	/^} prop_node;$/;"	t	typeref:struct:prop_node
+propagate_box	prover.c	/^int propagate_box = OFF;$/;"	v
+propagate_dia	prover.c	/^int propagate_dia = OFF;$/;"	v
+propagate_falsity	input_preprocessing.c	/^int propagate_falsity(tnode **node, tnode **nodeparent) {$/;"	f
+propagate_in_conjunction_or_disjunction	nnf_bnf_simp.c	/^formulalist *propagate_in_conjunction_or_disjunction(int type, tnode *formula, formulalist *l) {$/;"	f
+propagate_in_conjunction_or_disjunction	nnf_simp.c	/^formulalist *propagate_in_conjunction_or_disjunction(int type, tnode *formula, formulalist *l) {$/;"	f
+propagate_truth	input_preprocessing.c	/^int propagate_truth(tnode **node, tnode **parentnode) {$/;"	f
+propagate_unique_box_ml	processing.c	/^void propagate_unique_box_ml (void) {$/;"	f
+propagate_unique_dia_ml	processing.c	/^void propagate_unique_dia_ml (void) {$/;"	f
+propagated	symbol_table.h	/^  int propagated;$/;"	m	struct:tclause
+proposition	parser.y	/^proposition: TNAME$/;"	l
+propositions_list	parser.y	/^propositions_list: TNAME$/;"	l
+propsid	lex.yy.c	/^struct prop_node *propsid = NULL;    \/* important! initialize to NULL *\/$/;"	v	typeref:struct:prop_node
+propsname	lex.yy.c	/^struct prop_node *propsname = NULL;$/;"	v	typeref:struct:prop_node
+pthread_list	t_processing.c	/^typedef struct pthread_list {$/;"	s	file:
+pthread_list	t_processing.c	/^} pthread_list;$/;"	t	typeref:struct:pthread_list	file:
+pure_literal_elimination	preprocessing.c	/^int pure_literal_elimination (void) {$/;"	f
+r_rec	small_cnf.c	/^void r_rec(tnode *formula, int a, int b, int s) {$/;"	f
+recalculate_pfactor	small_cnf.c	/^tnode *recalculate_pfactor(tnode *t) {$/;"	f
+remove_clause_list	clauses.c	/^clauseslist *remove_clause_list(tclause *c, clauseslist *l) {$/;"	f
+remove_from_parent	input_preprocessing.c	/^tnode *remove_from_parent(tnode *parent_parent, tnode *parent, tnode *position) {$/;"	f
+remove_repeated_clause	simplify.c	/^literalslist *remove_repeated_clause(literalslist *l) {$/;"	f
+remove_repeated_clauses	clauses.c	/^void remove_repeated_clauses(clauseslist **clauses) {$/;"	f
+remove_size_one_list	nnf_bnf.c	/^tnode *remove_size_one_list(tnode *s) {$/;"	f
+ren_hash	renaming.c	/^typedef struct ren_hash {$/;"	s	file:
+ren_hash	renaming.c	/^} ren_hash;$/;"	t	typeref:struct:ren_hash	file:
+ren_key	renaming.c	/^} ren_key;$/;"	t	typeref:struct:__anon3	file:
+rename_formula	renaming.c	/^int rename_formula(tnode *formula, int type, int set, int subtype, int modal_level) {$/;"	f
+renamed_by	tree.h	/^  int renamed_by;$/;"	m	struct:formulalist
+renamed_by	tree.h	/^  int renamed_by;$/;"	m	struct:tnode
+renaming_table	renaming.c	/^ren_hash *renaming_table = NULL;$/;"	v
+resolve	lres.c	/^void resolve(int literal, tclause *c1, tclause *c2) {$/;"	f
+resolve_box_false	mres.c	/^tclause *resolve_box_false(tclause *c1, tclause *c2) {$/;"	f
+resolve_clauses_box_false	mres.c	/^void resolve_clauses_box_false(clauseslist *negative, clauseslist *positive) {$/;"	f
+resolve_clauses_gen2	gen2.c	/^tclause *resolve_clauses_gen2(tclause *c1, tclause *c2, tclause *c3) {$/;"	f
+resolve_clauses_mres	mres.c	/^tclause *resolve_clauses_mres(tclause *c1, tclause *c2) {$/;"	f
+resolve_sets_gen2	gen2.c	/^void resolve_sets_gen2 (hmaxlitclauses *negative, hmaxlitclauses *positive) {$/;"	f
+resolve_sets_mres	mres.c	/^void resolve_sets_mres (hmaxlitclauses *negative, hmaxlitclauses *positive) {$/;"	f
+resolve_unit	unit_resolution.c	/^tclause *resolve_unit(tclause *c1, tclause *c2) {$/;"	f
+resolve_unit_gen3	unit_resolution.c	/^int resolve_unit_gen3(tclause *c1, tclause *c2) {$/;"	f
+rfunction	tree.h	/^  int rfunction;$/;"	m	struct:tnode
+right	symbol_table.h	/^  struct literalslist *right;$/;"	m	struct:tclause	typeref:struct:tclause::literalslist
+right	tree.h	/^  struct tnode *right;$/;"	m	struct:tnode	typeref:struct:tnode::tnode
+root	prover.c	/^tnode *root; \/\/ pointer for the root of the syntatic tree$/;"	v
+rule	symbol_table.h	/^  int rule;$/;"	m	struct:justification
+same	clauses.c	/^int same(tclause *c1, tclause *c2) {$/;"	f
+same_list	nnf_bnf_simp.c	/^int same_list(formulalist *l1, formulalist *l2) {$/;"	f
+same_list	nnf_simp.c	/^int same_list(formulalist *l1, formulalist *l2) {$/;"	f
+same_tree	nnf_bnf_simp.c	/^int same_tree (tnode *t1, tnode *t2) {$/;"	f
+same_tree	nnf_simp.c	/^int same_tree (tnode *t1, tnode *t2) {$/;"	f
+satmle	prover.c	/^int satmle = OFF;$/;"	v
+satnextlevel	branch.c	/^int satnextlevel(literalshash **neg, literalshash *pos, hmlbranches *level){$/;"	f
+self_subsumption	subsumption.c	/^void self_subsumption (void) {$/;"	f
+set	parser.y	/^set : TSOS TLPAREN TFORMULAS TRPAREN TDOT formulas TDOT TEND TDOT$/;"	l
+sets	parser.y	/^sets : set$/;"	l
+shuffle	processing.c	/^hml_pclauses *shuffle(hml_pclauses *levels) {$/;"	f
+signature	uthash.h	/^   uint32_t signature; \/* used only to find hash tables in external analysis *\/$/;"	m	struct:UT_hash_table
+simp_while_reading	prover.c	/^int simp_while_reading = OFF;$/;"	v
+simplify_and	nnf_bnf_simp.c	/^formulalist *simplify_and (formulalist *s) {$/;"	f
+simplify_and	nnf_simp.c	/^formulalist *simplify_and (formulalist *s) {$/;"	f
+simplify_clause	simplify.c	/^literalslist *simplify_clause(literalslist *l) {$/;"	f
+simplify_diamonds	clauses.c	/^void simplify_diamonds (tclause *c) {$/;"	f
+simplify_disjunction	simplify.c	/^literalslist *simplify_disjunction (literal_list *l) {$/;"	f
+simplify_or	nnf_bnf_simp.c	/^formulalist *simplify_or (formulalist *s) {$/;"	f
+simplify_or	nnf_simp.c	/^formulalist *simplify_or (formulalist *s) {$/;"	f
+simplify_s4	prenex.c	/^tnode *simplify_s4 (tnode *s) {$/;"	f
+simplify_s5	prenex.c	/^tnode *simplify_s5 (tnode *s) {$/;"	f
+simplify_tautology_clause	simplify.c	/^literalslist *simplify_tautology_clause(literalslist *l){ $/;"	f
+size	clauses.h	/^  hsizeclauses *size;$/;"	m	struct:hmaxclauses
+size	clauses.h	/^  int size;$/;"	m	struct:hsizeclauses
+size	symbol_table.h	/^  int size;$/;"	m	struct:tclause
+size_clause	snf.c	/^int size_clause (literalslist *l) {$/;"	f
+size_list	tree.c	/^int size_list(formulalist *s) {$/;"	f
+size_tree	tree.c	/^int size_tree(tnode *s) {$/;"	f
+small_cnf	prover.c	/^int small_cnf = OFF;$/;"	v
+snf_minus	snf--.c	/^void snf_minus(void) {$/;"	f
+snf_minus_by_set	snf--.c	/^void snf_minus_by_set (int set, hml_mclauses **modal_set) {$/;"	f
+snf_plus	snf++.c	/^void snf_plus(void) {$/;"	f
+snf_plus_by_set	snf++.c	/^void snf_plus_by_set (int set, hml_mclauses **modal_set) {$/;"	f
+snfclausesize	prover.c	/^int snfclausesize = 0;$/;"	v
+sort_a_by_id	symbol_table.c	/^int sort_a_by_id(struct agent_node *a, struct agent_node *b) {$/;"	f
+sort_a_by_name	symbol_table.c	/^int sort_a_by_name(struct agent_node *a, struct agent_node *b) {$/;"	f
+sort_clause	simplify.c	/^void sort_clause(literalslist **l) {$/;"	f
+sort_clauses	clauses.c	/^void sort_clauses(clauseslist **l) {$/;"	f
+sort_formulalist	tree.c	/^void sort_formulalist(int type, formulalist **l) {$/;"	f
+sort_p_by_id	symbol_table.c	/^int sort_p_by_id (struct prop_node *a, struct prop_node *b) {$/;"	f
+sort_p_by_name	symbol_table.c	/^int sort_p_by_name(struct prop_node *a, struct prop_node *b) {$/;"	f
+sort_positions	symbol_table.c	/^hptr_nodes *sort_positions(hptr_nodes *positions) {$/;"	f
+sorted_merge_clause	simplify.c	/^literalslist *sorted_merge_clause(literalslist *left, literalslist *right) {$/;"	f
+sorted_merge_clauses	clauses.c	/^clauseslist *sorted_merge_clauses(clauseslist *left, clauseslist *right) {$/;"	f
+sorted_merge_formulalist	tree.c	/^formulalist *sorted_merge_formulalist(int type, formulalist *left, formulalist *right) {$/;"	f
+sos_subsumption	prover.c	/^int sos_subsumption = OFF;$/;"	v
+split_clause	simplify.c	/^void split_clause(literalslist *l, literalslist **left, literalslist **right) {$/;"	f
+split_clauses	clauses.c	/^void split_clauses(clauseslist *l, clauseslist **left, clauseslist **right) {$/;"	f
+split_formulalist	tree.c	/^void split_formulalist(formulalist *l, formulalist **left, formulalist **right) {$/;"	f
+strValue	parser.tab.h	/^  char *strValue;$/;"	m	union:YYSTYPE
+strong_modal_negative	prover.c	/^int strong_modal_negative = OFF;$/;"	v
+strong_modal_positive	prover.c	/^int strong_modal_positive = OFF;$/;"	v
+strong_renaming	prover.c	/^int strong_renaming = OFF;$/;"	v
+subsumes	subsumption.c	/^int subsumes (tclause *c1, tclause *c2) {$/;"	f
+subtype	symbol_table.h	/^  int subtype; \/\/ this is the unique identifier of the diamond a clause is in the scope of$/;"	m	struct:tclause
+symbol_table_init	symbol_table.c	/^void symbol_table_init(void) {$/;"	f
+t	symbol_table.h	/^  int t;$/;"	m	struct:agent_node
+t_do_gen	t_processing.c	/^void *t_do_gen(void *par) {$/;"	f
+t_lres	t_processing.c	/^void *t_lres(void *par) {$/;"	f
+t_processing	t_processing.c	/^int t_processing (int cycle, int processors) {$/;"	f
+t_res	t_processing.c	/^void *t_res(void *par) {$/;"	f
+tab	tree.c	/^int tab = 4;$/;"	v
+tag	branch.c	/^int tag = 0;$/;"	v
+tail	uthash.h	/^   struct UT_hash_handle *tail; \/* tail hh in app order, for fast append    *\/$/;"	m	struct:UT_hash_table	typeref:struct:UT_hash_table::UT_hash_handle
+tbl	uthash.h	/^   struct UT_hash_table *tbl;$/;"	m	struct:UT_hash_handle	typeref:struct:UT_hash_handle::UT_hash_table
+tbranch	model.h	/^typedef struct tbranch tbranch;$/;"	t	typeref:struct:tbranch
+tbranch	model.h	/^typedef struct tbranch{$/;"	s
+tbranch	model.h	/^}tbranch;$/;"	t	typeref:struct:tbranch
+tclause	symbol_table.h	/^typedef struct tclause {$/;"	s
+tclause	symbol_table.h	/^} tclause;$/;"	t	typeref:struct:tclause
+thread	t_processing.c	/^  pthread_t thread;$/;"	m	struct:pthread_list	file:
+time_stamp	prover.c	/^int time_stamp = OFF;$/;"	v
+tliterals	model.h	/^    int tliterals;$/;"	m	struct:tbranch
+tnode	parser.tab.h	/^  tnode *tnode;$/;"	m	union:YYSTYPE
+tnode	tree.h	/^typedef struct tnode {$/;"	s
+tnode	tree.h	/^} tnode;$/;"	t	typeref:struct:tnode
+total_branches	branch.c	/^int total_branches = 0;$/;"	v
+tree_hash	renaming.c	/^tnode *tree_hash(tnode *t) {$/;"	f
+tree_to_list	tree.c	/^formulalist *tree_to_list(int type, tnode *left, tnode *right) {$/;"	f
+try_gen1	gen1.c	/^void try_gen1(tclause *chosen, listsclauseslist *negative, listsclauseslist *positive) {$/;"	f
+try_gen3	gen3.c	/^void try_gen3(tclause *chosen, tclause *neg, listsclauseslist *resolvents) {$/;"	f
+try_literal	branch.c	/^int try_literal(int literal, literalshash* list){$/;"	f
+try_modalliteral	branch.c	/^int try_modalliteral(tclause *clause){$/;"	f
+try_unit	unit_resolution.c	/^int try_unit (int clausenumber) {$/;"	f
+type	clauses.h	/^  htypeclauses *type;$/;"	m	struct:hagentclauses
+type	clauses.h	/^  int type;$/;"	m	struct:htypeclauses
+type	model.h	/^    int type;$/;"	m	struct:htype
+type	symbol_table.h	/^  int type; \/\/ literal or modal (negative, positive)$/;"	m	struct:tclause
+type	tree.h	/^  int type;$/;"	m	struct:tnode
+types	model.h	/^    htype *types;$/;"	m	struct:hmlliterals
+uint32_t	uthash.h	/^typedef unsigned int uint32_t;$/;"	t
+uint8_t	uthash.h	/^typedef unsigned char uint8_t;$/;"	t
+unit	prover.c	/^int unit = OFF;$/;"	v
+unit_gen	unit_resolution.c	/^int unit_gen = 0;$/;"	v
+unit_resolution	unit_resolution.c	/^int unit_resolution (hml_pclauses **set) {$/;"	f
+unput	lex.yy.c	194;"	d	file:
+update_parent	input_preprocessing.c	/^tnode *update_parent(tnode *node) {$/;"	f
+uthash_expand_fyi	uthash.h	101;"	d
+uthash_fatal	uthash.h	82;"	d
+uthash_free	uthash.h	88;"	d
+uthash_malloc	uthash.h	85;"	d
+uthash_memcmp	uthash.h	94;"	d
+uthash_noexpand_fyi	uthash.h	98;"	d
+uthash_strlen	uthash.h	91;"	d
+value_number	renaming.c	/^  unsigned int value_number;$/;"	m	struct:__anon3	file:
+value_number	symbol_table.h	/^  unsigned int value_number;$/;"	m	struct:prop_node
+value_number	tree.h	/^  unsigned int value_number;$/;"	m	struct:formulalist
+value_number	tree.h	/^  unsigned int value_number;$/;"	m	struct:tnode
+verbose	prover.c	/^int verbose = OFF;$/;"	v
+yyFail	parser.tab.c	/^yyFail (yyGLRStack* yystackp, const char* yymsg)$/;"	f	file:
+yyGLRStack	parser.tab.c	/^struct yyGLRStack {$/;"	s	file:
+yyGLRStack	parser.tab.c	/^typedef struct yyGLRStack yyGLRStack;$/;"	t	typeref:struct:yyGLRStack	file:
+yyGLRStackItem	parser.tab.c	/^typedef union yyGLRStackItem yyGLRStackItem;$/;"	t	typeref:union:yyGLRStackItem	file:
+yyGLRStackItem	parser.tab.c	/^union yyGLRStackItem {$/;"	u	file:
+yyGLRState	parser.tab.c	/^struct yyGLRState {$/;"	s	file:
+yyGLRState	parser.tab.c	/^typedef struct yyGLRState yyGLRState;$/;"	t	typeref:struct:yyGLRState	file:
+yyGLRStateSet	parser.tab.c	/^struct yyGLRStateSet {$/;"	s	file:
+yyGLRStateSet	parser.tab.c	/^typedef struct yyGLRStateSet yyGLRStateSet;$/;"	t	typeref:struct:yyGLRStateSet	file:
+yyItemNum	parser.tab.c	/^typedef short int yyItemNum;$/;"	t	file:
+yyLRgotoState	parser.tab.c	/^yyLRgotoState (yyStateNum yystate, yySymbol yysym)$/;"	f	file:
+yyMemoryExhausted	parser.tab.c	/^yyMemoryExhausted (yyGLRStack* yystackp)$/;"	f	file:
+yyRuleNum	parser.tab.c	/^typedef int yyRuleNum;$/;"	t	file:
+yySemanticOption	parser.tab.c	/^struct yySemanticOption {$/;"	s	file:
+yySemanticOption	parser.tab.c	/^typedef struct yySemanticOption yySemanticOption;$/;"	t	typeref:struct:yySemanticOption	file:
+yyStateNum	parser.tab.c	/^typedef int yyStateNum;$/;"	t	file:
+yySymbol	parser.tab.c	/^typedef int yySymbol;$/;"	t	file:
+yy_accept	lex.yy.c	/^static yyconst flex_int16_t yy_accept[151] =$/;"	v	file:
+yy_at_bol	lex.yy.c	/^	int yy_at_bol;$/;"	m	struct:yy_buffer_state	file:
+yy_base	lex.yy.c	/^static yyconst flex_uint16_t yy_base[154] =$/;"	v	file:
+yy_bs_column	lex.yy.c	/^    int yy_bs_column; \/**< The column count. *\/$/;"	m	struct:yy_buffer_state	file:
+yy_bs_lineno	lex.yy.c	/^    int yy_bs_lineno; \/**< The line count. *\/$/;"	m	struct:yy_buffer_state	file:
+yy_buf_pos	lex.yy.c	/^	char *yy_buf_pos;		\/* current position in input buffer *\/$/;"	m	struct:yy_buffer_state	file:
+yy_buf_size	lex.yy.c	/^	yy_size_t yy_buf_size;$/;"	m	struct:yy_buffer_state	file:
+yy_buffer_stack	lex.yy.c	/^static YY_BUFFER_STATE * yy_buffer_stack = 0; \/**< Stack as an array. *\/$/;"	v	file:
+yy_buffer_stack_max	lex.yy.c	/^static size_t yy_buffer_stack_max = 0; \/**< capacity of stack. *\/$/;"	v	file:
+yy_buffer_stack_top	lex.yy.c	/^static size_t yy_buffer_stack_top = 0; \/**< index of top of stack. *\/$/;"	v	file:
+yy_buffer_state	lex.yy.c	/^struct yy_buffer_state$/;"	s	file:
+yy_buffer_status	lex.yy.c	/^	int yy_buffer_status;$/;"	m	struct:yy_buffer_state	file:
+yy_c_buf_p	lex.yy.c	/^static char *yy_c_buf_p = (char *) 0;$/;"	v	file:
+yy_ch_buf	lex.yy.c	/^	char *yy_ch_buf;		\/* input buffer *\/$/;"	m	struct:yy_buffer_state	file:
+yy_chk	lex.yy.c	/^static yyconst flex_int16_t yy_chk[645] =$/;"	v	file:
+yy_create_buffer	lex.yy.c	/^    YY_BUFFER_STATE yy_create_buffer  (FILE * file, int  size )$/;"	f
+yy_def	lex.yy.c	/^static yyconst flex_int16_t yy_def[154] =$/;"	v	file:
+yy_delete_buffer	lex.yy.c	/^    void yy_delete_buffer (YY_BUFFER_STATE  b )$/;"	f
+yy_did_buffer_switch_on_eof	lex.yy.c	/^static int yy_did_buffer_switch_on_eof;$/;"	v	file:
+yy_ec	lex.yy.c	/^static yyconst YY_CHAR yy_ec[256] =$/;"	v	file:
+yy_fatal_error	lex.yy.c	/^static void yy_fatal_error (yyconst char* msg )$/;"	f	file:
+yy_fill_buffer	lex.yy.c	/^	int yy_fill_buffer;$/;"	m	struct:yy_buffer_state	file:
+yy_flex_debug	lex.yy.c	/^int yy_flex_debug = 0;$/;"	v
+yy_flex_strlen	lex.yy.c	/^static int yy_flex_strlen (yyconst char * s )$/;"	f	file:
+yy_flex_strncpy	lex.yy.c	/^static void yy_flex_strncpy (char* s1, yyconst char * s2, int n )$/;"	f	file:
+yy_flush_buffer	lex.yy.c	/^    void yy_flush_buffer (YY_BUFFER_STATE  b )$/;"	f
+yy_get_next_buffer	lex.yy.c	/^static int yy_get_next_buffer (void)$/;"	f	file:
+yy_get_previous_state	lex.yy.c	/^    static yy_state_type yy_get_previous_state (void)$/;"	f	file:
+yy_hold_char	lex.yy.c	/^static char yy_hold_char;$/;"	v	file:
+yy_init	lex.yy.c	/^static int yy_init = 0;		\/* whether we need to initialize *\/$/;"	v	file:
+yy_init_buffer	lex.yy.c	/^    static void yy_init_buffer  (YY_BUFFER_STATE  b, FILE * file )$/;"	f	file:
+yy_init_globals	lex.yy.c	/^static int yy_init_globals (void)$/;"	f	file:
+yy_input_file	lex.yy.c	/^	FILE *yy_input_file;$/;"	m	struct:yy_buffer_state	file:
+yy_is_interactive	lex.yy.c	/^	int yy_is_interactive;$/;"	m	struct:yy_buffer_state	file:
+yy_is_our_buffer	lex.yy.c	/^	int yy_is_our_buffer;$/;"	m	struct:yy_buffer_state	file:
+yy_last_accepting_cpos	lex.yy.c	/^static char *yy_last_accepting_cpos;$/;"	v	file:
+yy_last_accepting_state	lex.yy.c	/^static yy_state_type yy_last_accepting_state;$/;"	v	file:
+yy_load_buffer_state	lex.yy.c	/^static void yy_load_buffer_state  (void)$/;"	f	file:
+yy_meta	lex.yy.c	/^static yyconst YY_CHAR yy_meta[69] =$/;"	v	file:
+yy_n_chars	lex.yy.c	/^	yy_size_t yy_n_chars;$/;"	m	struct:yy_buffer_state	file:
+yy_n_chars	lex.yy.c	/^static yy_size_t yy_n_chars;		\/* number of characters read into yy_ch_buf *\/$/;"	v	file:
+yy_new_buffer	lex.yy.c	318;"	d	file:
+yy_nxt	lex.yy.c	/^	flex_int32_t yy_nxt;$/;"	m	struct:yy_trans_info	file:
+yy_nxt	lex.yy.c	/^static yyconst flex_uint16_t yy_nxt[645] =$/;"	v	file:
+yy_reduce_print	parser.tab.c	/^yy_reduce_print (int yynormal, yyGLRStackItem* yyvsp, size_t yyk,$/;"	f	file:
+yy_scan_buffer	lex.yy.c	/^YY_BUFFER_STATE yy_scan_buffer  (char * base, yy_size_t  size )$/;"	f
+yy_scan_bytes	lex.yy.c	/^YY_BUFFER_STATE yy_scan_bytes  (yyconst char * yybytes, yy_size_t  _yybytes_len )$/;"	f
+yy_scan_string	lex.yy.c	/^YY_BUFFER_STATE yy_scan_string (yyconst char * yystr )$/;"	f
+yy_set_bol	lex.yy.c	330;"	d	file:
+yy_set_interactive	lex.yy.c	320;"	d	file:
+yy_size_t	lex.yy.c	/^typedef size_t yy_size_t;$/;"	t	file:
+yy_start	lex.yy.c	/^static int yy_start = 0;	\/* start state number *\/$/;"	v	file:
+yy_state_type	lex.yy.c	/^typedef int yy_state_type;$/;"	t	file:
+yy_switch_to_buffer	lex.yy.c	/^    void yy_switch_to_buffer  (YY_BUFFER_STATE  new_buffer )$/;"	f
+yy_symbol_print	parser.tab.c	/^yy_symbol_print (FILE *yyoutput, int yytype, YYSTYPE const * const yyvaluep)$/;"	f	file:
+yy_symbol_value_print	parser.tab.c	/^yy_symbol_value_print (FILE *yyoutput, int yytype, YYSTYPE const * const yyvaluep)$/;"	f	file:
+yy_trans_info	lex.yy.c	/^struct yy_trans_info$/;"	s	file:
+yy_try_NUL_trans	lex.yy.c	/^    static yy_state_type yy_try_NUL_trans  (yy_state_type yy_current_state )$/;"	f	file:
+yy_verify	lex.yy.c	/^	flex_int32_t yy_verify;$/;"	m	struct:yy_trans_info	file:
+yy_yypstack	parser.tab.c	/^yy_yypstack (yyGLRState* yys)$/;"	f	file:
+yyabort	parser.tab.c	/^typedef enum { yyok, yyaccept, yyabort, yyerr } YYRESULTTAG;$/;"	e	enum:__anon1	file:
+yyaccept	parser.tab.c	/^typedef enum { yyok, yyaccept, yyabort, yyerr } YYRESULTTAG;$/;"	e	enum:__anon1	file:
+yyaddDeferredAction	parser.tab.c	/^yyaddDeferredAction (yyGLRStack* yystackp, size_t yyk, yyGLRState* yystate,$/;"	f	file:
+yyalloc	lex.yy.c	/^void *yyalloc (yy_size_t  size )$/;"	f
+yybool	parser.tab.c	/^   typedef bool yybool;$/;"	t	file:
+yybool	parser.tab.c	/^   typedef unsigned char yybool;$/;"	t	file:
+yycapacity	parser.tab.c	/^  size_t yysize, yycapacity;$/;"	m	struct:yyGLRStateSet	file:
+yychar	parser.tab.c	3743;"	d	file:
+yychar	parser.tab.c	644;"	d	file:
+yychar	parser.tab.c	645;"	d	file:
+yycheck	parser.tab.c	/^static const unsigned char yycheck[] =$/;"	v	file:
+yyclearin	parser.tab.c	1037;"	d	file:
+yyclearin	parser.tab.c	1038;"	d	file:
+yyclearin	parser.tab.c	2076;"	d	file:
+yycompressStack	parser.tab.c	/^yycompressStack (yyGLRStack* yystackp)$/;"	f	file:
+yyconfl	parser.tab.c	/^static const short int yyconfl[] =$/;"	v	file:
+yyconflp	parser.tab.c	/^static const unsigned char yyconflp[] =$/;"	v	file:
+yyconst	lex.yy.c	106;"	d	file:
+yyconst	lex.yy.c	108;"	d	file:
+yydebug	parser.tab.c	/^int yydebug;$/;"	v
+yydefact	parser.tab.c	/^static const unsigned char yydefact[] =$/;"	v	file:
+yydefaultAction	parser.tab.c	/^yydefaultAction (yyStateNum yystate)$/;"	f	file:
+yydefgoto	parser.tab.c	/^static const signed char yydefgoto[] =$/;"	v	file:
+yydestroyGLRState	parser.tab.c	/^yydestroyGLRState (char const *yymsg, yyGLRState *yys)$/;"	f	file:
+yydestruct	parser.tab.c	/^yydestruct (const char *yymsg, int yytype, YYSTYPE *yyvaluep)$/;"	f	file:
+yydoAction	parser.tab.c	/^yydoAction (yyGLRStack* yystackp, size_t yyk, yyRuleNum yyrule,$/;"	f	file:
+yydprec	parser.tab.c	/^static const unsigned char yydprec[] =$/;"	v	file:
+yyensure_buffer_stack	lex.yy.c	/^static void yyensure_buffer_stack (void)$/;"	f	file:
+yyerr	parser.tab.c	/^typedef enum { yyok, yyaccept, yyabort, yyerr } YYRESULTTAG;$/;"	e	enum:__anon1	file:
+yyerrState	parser.tab.c	/^  int yyerrState;$/;"	m	struct:yyGLRStack	file:
+yyerrcnt	parser.tab.c	/^  int yyerrcnt;$/;"	m	struct:yyGLRStack	file:
+yyerrok	parser.tab.c	1027;"	d	file:
+yyerrok	parser.tab.c	1028;"	d	file:
+yyerrok	parser.tab.c	2071;"	d	file:
+yyerror	parser.tab.c	/^void yyerror (char const *s) {$/;"	f
+yyexception_buffer	parser.tab.c	/^  YYJMP_BUF yyexception_buffer;$/;"	m	struct:yyGLRStack	file:
+yyexpandGLRStack	parser.tab.c	/^yyexpandGLRStack (yyGLRStack* yystackp)$/;"	f	file:
+yyfalse	parser.tab.c	212;"	d	file:
+yyfill	parser.tab.c	/^yyfill (yyGLRStackItem *yyvsp, int *yylow, int yylow1, yybool yynormal)$/;"	f	file:
+yyfillin	parser.tab.c	/^yyfillin (yyGLRStackItem *yyvsp, int yylow0, int yylow1)$/;"	f	file:
+yyfirstVal	parser.tab.c	/^    yySemanticOption* yyfirstVal;$/;"	m	union:yyGLRState::__anon2	file:
+yyfree	lex.yy.c	/^void yyfree (void * ptr )$/;"	f
+yyfreeGLRStack	parser.tab.c	/^yyfreeGLRStack (yyGLRStack* yystackp)$/;"	f	file:
+yyfreeStateSet	parser.tab.c	/^static void yyfreeStateSet (yyGLRStateSet* yyset)$/;"	f	file:
+yygetLRActions	parser.tab.c	/^yygetLRActions (yyStateNum yystate, int yytoken,$/;"	f	file:
+yyget_debug	lex.yy.c	/^int yyget_debug  (void)$/;"	f
+yyget_in	lex.yy.c	/^FILE *yyget_in  (void)$/;"	f
+yyget_leng	lex.yy.c	/^yy_size_t yyget_leng  (void)$/;"	f
+yyget_lineno	lex.yy.c	/^int yyget_lineno  (void)$/;"	f
+yyget_out	lex.yy.c	/^FILE *yyget_out  (void)$/;"	f
+yyget_text	lex.yy.c	/^char *yyget_text  (void)$/;"	f
+yyglrReduce	parser.tab.c	/^yyglrReduce (yyGLRStack* yystackp, size_t yyk, yyRuleNum yyrule,$/;"	f	file:
+yyglrShift	parser.tab.c	/^yyglrShift (yyGLRStack* yystackp, size_t yyk, yyStateNum yylrState,$/;"	f	file:
+yyglrShiftDefer	parser.tab.c	/^yyglrShiftDefer (yyGLRStack* yystackp, size_t yyk, yyStateNum yylrState,$/;"	f	file:
+yyidenticalOptions	parser.tab.c	/^yyidenticalOptions (yySemanticOption* yyy0, yySemanticOption* yyy1)$/;"	f	file:
+yyimmediate	parser.tab.c	/^static const yybool yyimmediate[] =$/;"	v	file:
+yyin	lex.yy.c	/^FILE *yyin = (FILE *) 0, *yyout = (FILE *) 0;$/;"	v
+yyinitGLRStack	parser.tab.c	/^yyinitGLRStack (yyGLRStack* yystackp, size_t yysize)$/;"	f	file:
+yyinitStateSet	parser.tab.c	/^yyinitStateSet (yyGLRStateSet* yyset)$/;"	f	file:
+yyinput	lex.yy.c	/^    static int yyinput (void)$/;"	f	file:
+yyisDefaultedState	parser.tab.c	/^yyisDefaultedState (yyStateNum yystate)$/;"	f	file:
+yyisErrorAction	parser.tab.c	/^yyisErrorAction (int yyaction)$/;"	f	file:
+yyisShiftAction	parser.tab.c	/^yyisShiftAction (int yyaction)$/;"	f	file:
+yyisState	parser.tab.c	/^  yybool yyisState;$/;"	m	struct:yyGLRState	file:
+yyisState	parser.tab.c	/^  yybool yyisState;$/;"	m	struct:yySemanticOption	file:
+yyitems	parser.tab.c	/^  yyGLRStackItem* yyitems;$/;"	m	struct:yyGLRStack	file:
+yylastDeleted	parser.tab.c	/^  yyGLRState* yylastDeleted;$/;"	m	struct:yyGLRStack	file:
+yyleng	lex.yy.c	/^yy_size_t yyleng;$/;"	v
+yyless	lex.yy.c	181;"	d	file:
+yyless	lex.yy.c	1968;"	d	file:
+yyless	lex.yy.c	1969;"	d	file:
+yylex_destroy	lex.yy.c	/^int yylex_destroy  (void)$/;"	f
+yylhsNonterm	parser.tab.c	/^yylhsNonterm (yyRuleNum yyrule)$/;"	f	file:
+yylineno	lex.yy.c	/^int yylineno = 1;$/;"	v
+yylloc	parser.tab.c	648;"	d	file:
+yylloc	parser.tab.c	649;"	d	file:
+yylookaheadNeeds	parser.tab.c	/^  yybool* yylookaheadNeeds;$/;"	m	struct:yyGLRStateSet	file:
+yylrState	parser.tab.c	/^  yyStateNum yylrState;$/;"	m	struct:yyGLRState	file:
+yylval	parser.tab.c	3742;"	d	file:
+yylval	parser.tab.c	646;"	d	file:
+yylval	parser.tab.c	647;"	d	file:
+yymarkStackDeleted	parser.tab.c	/^yymarkStackDeleted (yyGLRStack* yystackp, size_t yyk)$/;"	f	file:
+yymergeOptionSets	parser.tab.c	/^yymergeOptionSets (yySemanticOption* yyy0, yySemanticOption* yyy1)$/;"	f	file:
+yymerger	parser.tab.c	/^static const unsigned char yymerger[] =$/;"	v	file:
+yymore	lex.yy.c	655;"	d	file:
+yynerrs	parser.tab.c	3744;"	d	file:
+yynerrs	parser.tab.c	642;"	d	file:
+yynerrs	parser.tab.c	643;"	d	file:
+yynewGLRStackItem	parser.tab.c	/^yynewGLRStackItem (yyGLRStack* yystackp, yybool yyisState)$/;"	f	file:
+yynext	parser.tab.c	/^  yySemanticOption* yynext;$/;"	m	struct:yySemanticOption	file:
+yynextFree	parser.tab.c	/^  yyGLRStackItem* yynextFree;$/;"	m	struct:yyGLRStack	file:
+yyok	parser.tab.c	/^typedef enum { yyok, yyaccept, yyabort, yyerr } YYRESULTTAG;$/;"	e	enum:__anon1	file:
+yyoption	parser.tab.c	/^  yySemanticOption yyoption;$/;"	m	union:yyGLRStackItem	file:
+yyout	lex.yy.c	/^FILE *yyin = (FILE *) 0, *yyout = (FILE *) 0;$/;"	v
+yypact	parser.tab.c	/^static const short int yypact[] =$/;"	v	file:
+yypact_value_is_default	parser.tab.c	2159;"	d	file:
+yyparse	parser.tab.c	/^yyparse (void)$/;"	f
+yypdumpstack	parser.tab.c	/^yypdumpstack (yyGLRStack* yystackp)$/;"	f	file:
+yypgoto	parser.tab.c	/^static const short int yypgoto[] =$/;"	v	file:
+yypop_buffer_state	lex.yy.c	/^void yypop_buffer_state (void)$/;"	f
+yyposn	parser.tab.c	/^  size_t yyposn;$/;"	m	struct:yyGLRState	file:
+yypred	parser.tab.c	/^  yyGLRState* yypred;$/;"	m	struct:yyGLRState	file:
+yypreference	parser.tab.c	/^yypreference (yySemanticOption* y0, yySemanticOption* y1)$/;"	f	file:
+yyprocessOneStack	parser.tab.c	/^yyprocessOneStack (yyGLRStack* yystackp, size_t yyk,$/;"	f	file:
+yypstack	parser.tab.c	/^yypstack (yyGLRStack* yystackp, size_t yyk)$/;"	f	file:
+yypstates	parser.tab.c	/^yypstates (yyGLRState* yyst)$/;"	f	file:
+yypush_buffer_state	lex.yy.c	/^void yypush_buffer_state (YY_BUFFER_STATE new_buffer )$/;"	f
+yyr1	parser.tab.c	/^static const unsigned char yyr1[] =$/;"	v	file:
+yyr2	parser.tab.c	/^static const unsigned char yyr2[] =$/;"	v	file:
+yyrawchar	parser.tab.c	/^  int yyrawchar;$/;"	m	struct:yyGLRStack	file:
+yyrawchar	parser.tab.c	/^  int yyrawchar;$/;"	m	struct:yySemanticOption	file:
+yyrealloc	lex.yy.c	/^void *yyrealloc  (void * ptr, yy_size_t  size )$/;"	f
+yyrecoverSyntaxError	parser.tab.c	/^yyrecoverSyntaxError (yyGLRStack* yystackp)$/;"	f	file:
+yyremoveDeletes	parser.tab.c	/^yyremoveDeletes (yyGLRStack* yystackp)$/;"	f	file:
+yyreportAmbiguity	parser.tab.c	/^yyreportAmbiguity (yySemanticOption* yyx0,$/;"	f	file:
+yyreportSyntaxError	parser.tab.c	/^yyreportSyntaxError (yyGLRStack* yystackp)$/;"	f	file:
+yyreportTree	parser.tab.c	/^yyreportTree (yySemanticOption* yyx, int yyindent)$/;"	f	file:
+yyresolveAction	parser.tab.c	/^yyresolveAction (yySemanticOption* yyopt, yyGLRStack* yystackp,$/;"	f	file:
+yyresolveStack	parser.tab.c	/^yyresolveStack (yyGLRStack* yystackp)$/;"	f	file:
+yyresolveStates	parser.tab.c	/^yyresolveStates (yyGLRState* yys, int yyn,$/;"	f	file:
+yyresolveValue	parser.tab.c	/^yyresolveValue (yyGLRState* yys, yyGLRStack* yystackp)$/;"	f	file:
+yyresolved	parser.tab.c	/^  yybool yyresolved;$/;"	m	struct:yyGLRState	file:
+yyrestart	lex.yy.c	/^    void yyrestart  (FILE * input_file )$/;"	f
+yyrhsLength	parser.tab.c	/^yyrhsLength (yyRuleNum yyrule)$/;"	f	file:
+yyrline	parser.tab.c	/^static const unsigned short int yyrline[] =$/;"	v	file:
+yyrule	parser.tab.c	/^  yyRuleNum yyrule;$/;"	m	struct:yySemanticOption	file:
+yysemantics	parser.tab.c	/^  } yysemantics;$/;"	m	struct:yyGLRState	typeref:union:yyGLRState::__anon2	file:
+yyset_debug	lex.yy.c	/^void yyset_debug (int  _bdebug )$/;"	f
+yyset_in	lex.yy.c	/^void yyset_in (FILE *  _in_str )$/;"	f
+yyset_lineno	lex.yy.c	/^void yyset_lineno (int  _line_number )$/;"	f
+yyset_out	lex.yy.c	/^void yyset_out (FILE *  _out_str )$/;"	f
+yysize	parser.tab.c	/^  size_t yysize, yycapacity;$/;"	m	struct:yyGLRStateSet	file:
+yyspaceLeft	parser.tab.c	/^  size_t yyspaceLeft;$/;"	m	struct:yyGLRStack	file:
+yysplitPoint	parser.tab.c	/^  yyGLRState* yysplitPoint;$/;"	m	struct:yyGLRStack	file:
+yysplitStack	parser.tab.c	/^yysplitStack (yyGLRStack* yystackp, size_t yyk)$/;"	f	file:
+yystate	parser.tab.c	/^  yyGLRState yystate;$/;"	m	union:yyGLRStackItem	file:
+yystate	parser.tab.c	/^  yyGLRState* yystate;$/;"	m	struct:yySemanticOption	file:
+yystates	parser.tab.c	/^  yyGLRState** yystates;$/;"	m	struct:yyGLRStateSet	file:
+yystos	parser.tab.c	/^static const unsigned char yystos[] =$/;"	v	file:
+yystpcpy	parser.tab.c	/^yystpcpy (char *yydest, const char *yysrc)$/;"	f	file:
+yystpcpy	parser.tab.c	785;"	d	file:
+yysval	parser.tab.c	/^    YYSTYPE yysval;$/;"	m	union:yyGLRState::__anon2	file:
+yytable	parser.tab.c	/^static const short int yytable[] =$/;"	v	file:
+yytable_value_is_error	parser.tab.c	2177;"	d	file:
+yyterminate	lex.yy.c	830;"	d	file:
+yytext	lex.yy.c	/^char *yytext;$/;"	v
+yytext_ptr	lex.yy.c	359;"	d	file:
+yytext_ptr	lex.yy.c	361;"	d	file:
+yytname	parser.tab.c	/^static const char *const yytname[] =$/;"	v	file:
+yytnamerr	parser.tab.c	/^yytnamerr (char *yyres, const char *yystr)$/;"	f	file:
+yytokenName	parser.tab.c	/^yytokenName (yySymbol yytoken)$/;"	f	file:
+yytokentype	parser.tab.h	/^  enum yytokentype$/;"	g
+yytops	parser.tab.c	/^  yyGLRStateSet yytops;$/;"	m	struct:yyGLRStack	file:
+yytranslate	parser.tab.c	/^static const unsigned char yytranslate[] =$/;"	v	file:
+yytrue	parser.tab.c	211;"	d	file:
+yyundeleteLastStack	parser.tab.c	/^yyundeleteLastStack (yyGLRStack* yystackp)$/;"	f	file:
+yyunput	lex.yy.c	/^    static void yyunput (int c, char * yy_bp )$/;"	f	file:
+yyupdateSplit	parser.tab.c	/^yyupdateSplit (yyGLRStack* yystackp, yyGLRState* yys)$/;"	f	file:
+yyuserAction	parser.tab.c	/^yyuserAction (yyRuleNum yyn, size_t yyrhslen, yyGLRStackItem* yyvsp,$/;"	f	file:
+yyuserMerge	parser.tab.c	/^yyuserMerge (int yyn, YYSTYPE* yy0, YYSTYPE* yy1)$/;"	f	file:
+yyval	parser.tab.c	/^  YYSTYPE yyval;$/;"	m	struct:yyGLRStack	file:
+yyval	parser.tab.c	/^  YYSTYPE yyval;$/;"	m	struct:yySemanticOption	file:
+yyval_default	parser.tab.c	/^static YYSTYPE yyval_default;$/;"	v	file:
+yywrap	lex.yy.c	344;"	d	file:

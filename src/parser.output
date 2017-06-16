@@ -1,0 +1,1970 @@
+Terminals unused in grammar
+
+   "modal operator delimiter (open)"
+   "modal operator delimiter (close)"
+
+
+State 52 conflicts: 1 shift/reduce
+State 53 conflicts: 1 shift/reduce
+
+
+Grammar
+
+    0 $accept: file $end
+
+    1 file: %empty
+    2     | declarations "."
+    3     | declarations "." sets
+    4     | sets
+
+    5 declarations: %empty
+    6             | declaration
+    7             | declarations "." declaration
+
+    8 declaration: "set option command" "(" option ")"
+
+    9 option: "identifier"
+   10       | "identifier" "," "number"
+   11       | "identifier" "," propositions_list
+   12       | "box operator" modal_arg "," axioms
+   13       | "box operator" "," axioms
+   14       | error
+
+   15 axioms: %empty
+   16       | "identifier"
+   17       | "identifier" "," axioms
+
+   18 sets: set
+   19     | sets "." set
+
+   20 set: "sos" "(" "formulas" ")" "." formulas "." "end of list" "."
+   21    | "usable" "(" "formulas" ")" "." formulas "." "end of list" "."
+   22    | "sos" "(" "clauses" ")" "." clauses "." "end of list" "."
+   23    | "usable" "(" "clauses" ")" "." clauses "." "end of list" "."
+
+   24 clauses: %empty
+   25        | clause
+   26        | clauses "." clause
+
+   27 clause: initial_clause
+   28       | literal_clause
+   29       | modal_clause
+   30       | error "."
+
+   31 initial_clause: TSTART "implication" disjunction_literals
+
+   32 literal_clause: TTRUE "implication" disjunction_literals
+   33               | disjunction_literals
+
+   34 modal_clause: literal "implication" "box operator" modal_arg literal
+   35             | literal "implication" "box operator" literal
+   36             | literal "implication" TOBOX modal_arg TCBOX literal
+   37             | literal "implication" TOBOX TCBOX literal
+   38             | literal "implication" "diamond operator" modal_arg literal
+   39             | literal "implication" "diamond operator" literal
+   40             | literal "implication" TODIA modal_arg TCDIA literal
+   41             | literal "implication" TODIA TCDIA literal
+
+   42 disjunction_literals: disjunction_literals "disjunction" literal
+   43                     | literal
+   44                     | "(" disjunction_literals ")"
+
+   45 literal: proposition
+   46        | "negation" literal
+
+   47 formulas: %empty
+   48         | formula
+   49         | formulas "." formula
+
+   50 formula: formula "double implication" formula
+   51        | formula "implication" formula
+   52        | formula "only if" formula
+   53        | formula "disjunction" formula
+   54        | formula "conjunction" formula
+   55        | "negation" formula
+   56        | TOBOX modal_arg TCBOX formula
+   57        | "box operator" modal_arg formula
+   58        | TOBOX TCBOX formula
+   59        | "box operator" formula
+   60        | TODIA modal_arg TCDIA formula
+   61        | "diamond operator" modal_arg formula
+   62        | TODIA TCDIA formula
+   63        | "diamond operator" formula
+   64        | "(" formula ")"
+   65        | proposition
+   66        | error
+
+   67 propositions_list: "identifier"
+   68                  | propositions_list "," "identifier"
+
+   69 modal_arg: "number"
+   70          | "identifier"
+
+   71 proposition: "identifier"
+   72            | TSTART
+   73            | TTRUE
+   74            | "constant"
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+error (256) 14 30 66
+"double implication" (258) 50
+"implication" (259) 31 32 34 35 36 37 38 39 40 41 51
+"only if" (260) 52
+"disjunction" (261) 42 53
+"conjunction" (262) 54
+"negation" (263) 46 55
+"diamond operator" (264) 38 39 61 63
+"box operator" (265) 12 13 34 35 57 59
+TOBOX (266) 36 37 56 58
+TODIA (267) 40 41 60 62
+"modal operator delimiter (open)" (268)
+TCBOX (269) 36 37 56 58
+TCDIA (270) 40 41 60 62
+"modal operator delimiter (close)" (271)
+"identifier" (272) 9 10 11 16 17 67 68 70 71
+"number" (273) 10 69
+TSTART (274) 31 72
+TTRUE (275) 32 73
+"constant" (276) 74
+"set option command" (277) 8
+"." (278) 2 3 7 19 20 21 22 23 26 30 49
+"," (279) 10 11 12 13 17 68
+"clauses" (280) 22 23
+"formulas" (281) 20 21
+"sos" (282) 20 22
+"usable" (283) 21 23
+"end of list" (284) 20 21 22 23
+"(" (285) 8 20 21 22 23 44 64
+")" (286) 8 20 21 22 23 44 64
+
+
+Nonterminals, with rules where they appear
+
+$accept (32)
+    on left: 0
+file (33)
+    on left: 1 2 3 4, on right: 0
+declarations (34)
+    on left: 5 6 7, on right: 2 3 7
+declaration (35)
+    on left: 8, on right: 6 7
+option (36)
+    on left: 9 10 11 12 13 14, on right: 8
+axioms (37)
+    on left: 15 16 17, on right: 12 13 17
+sets (38)
+    on left: 18 19, on right: 3 4 19
+set (39)
+    on left: 20 21 22 23, on right: 18 19
+clauses (40)
+    on left: 24 25 26, on right: 22 23 26
+clause (41)
+    on left: 27 28 29 30, on right: 25 26
+initial_clause (42)
+    on left: 31, on right: 27
+literal_clause (43)
+    on left: 32 33, on right: 28
+modal_clause (44)
+    on left: 34 35 36 37 38 39 40 41, on right: 29
+disjunction_literals (45)
+    on left: 42 43 44, on right: 31 32 33 42 44
+literal (46)
+    on left: 45 46, on right: 34 35 36 37 38 39 40 41 42 43 46
+formulas (47)
+    on left: 47 48 49, on right: 20 21 49
+formula (48)
+    on left: 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66, on right:
+    48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64
+propositions_list (49)
+    on left: 67 68, on right: 11 68
+modal_arg (50)
+    on left: 69 70, on right: 12 34 36 38 40 56 57 60 61
+proposition (51)
+    on left: 71 72 73 74, on right: 45 65
+
+
+State 0
+
+    0 $accept: . file $end
+
+    "set option command"  shift, and go to state 1
+    "sos"                 shift, and go to state 2
+    "usable"              shift, and go to state 3
+
+    "."       reduce using rule 5 (declarations)
+    $default  reduce using rule 1 (file)
+
+    file          go to state 4
+    declarations  go to state 5
+    declaration   go to state 6
+    sets          go to state 7
+    set           go to state 8
+
+
+State 1
+
+    8 declaration: "set option command" . "(" option ")"
+
+    "("  shift, and go to state 9
+
+
+State 2
+
+   20 set: "sos" . "(" "formulas" ")" "." formulas "." "end of list" "."
+   22    | "sos" . "(" "clauses" ")" "." clauses "." "end of list" "."
+
+    "("  shift, and go to state 10
+
+
+State 3
+
+   21 set: "usable" . "(" "formulas" ")" "." formulas "." "end of list" "."
+   23    | "usable" . "(" "clauses" ")" "." clauses "." "end of list" "."
+
+    "("  shift, and go to state 11
+
+
+State 4
+
+    0 $accept: file . $end
+
+    $end  shift, and go to state 12
+
+
+State 5
+
+    2 file: declarations . "."
+    3     | declarations . "." sets
+    7 declarations: declarations . "." declaration
+
+    "."  shift, and go to state 13
+
+
+State 6
+
+    6 declarations: declaration .
+
+    $default  reduce using rule 6 (declarations)
+
+
+State 7
+
+    4 file: sets .
+   19 sets: sets . "." set
+
+    "."  shift, and go to state 14
+
+    $default  reduce using rule 4 (file)
+
+
+State 8
+
+   18 sets: set .
+
+    $default  reduce using rule 18 (sets)
+
+
+State 9
+
+    8 declaration: "set option command" "(" . option ")"
+
+    error           shift, and go to state 15
+    "box operator"  shift, and go to state 16
+    "identifier"    shift, and go to state 17
+
+    option  go to state 18
+
+
+State 10
+
+   20 set: "sos" "(" . "formulas" ")" "." formulas "." "end of list" "."
+   22    | "sos" "(" . "clauses" ")" "." clauses "." "end of list" "."
+
+    "clauses"   shift, and go to state 19
+    "formulas"  shift, and go to state 20
+
+
+State 11
+
+   21 set: "usable" "(" . "formulas" ")" "." formulas "." "end of list" "."
+   23    | "usable" "(" . "clauses" ")" "." clauses "." "end of list" "."
+
+    "clauses"   shift, and go to state 21
+    "formulas"  shift, and go to state 22
+
+
+State 12
+
+    0 $accept: file $end .
+
+    $default  accept
+
+
+State 13
+
+    2 file: declarations "." .
+    3     | declarations "." . sets
+    7 declarations: declarations "." . declaration
+
+    "set option command"  shift, and go to state 1
+    "sos"                 shift, and go to state 2
+    "usable"              shift, and go to state 3
+
+    $default  reduce using rule 2 (file)
+
+    declaration  go to state 23
+    sets         go to state 24
+    set          go to state 8
+
+
+State 14
+
+   19 sets: sets "." . set
+
+    "sos"     shift, and go to state 2
+    "usable"  shift, and go to state 3
+
+    set  go to state 25
+
+
+State 15
+
+   14 option: error .
+
+    $default  reduce using rule 14 (option)
+
+
+State 16
+
+   12 option: "box operator" . modal_arg "," axioms
+   13       | "box operator" . "," axioms
+
+    "identifier"  shift, and go to state 26
+    "number"      shift, and go to state 27
+    ","           shift, and go to state 28
+
+    modal_arg  go to state 29
+
+
+State 17
+
+    9 option: "identifier" .
+   10       | "identifier" . "," "number"
+   11       | "identifier" . "," propositions_list
+
+    ","  shift, and go to state 30
+
+    $default  reduce using rule 9 (option)
+
+
+State 18
+
+    8 declaration: "set option command" "(" option . ")"
+
+    ")"  shift, and go to state 31
+
+
+State 19
+
+   22 set: "sos" "(" "clauses" . ")" "." clauses "." "end of list" "."
+
+    ")"  shift, and go to state 32
+
+
+State 20
+
+   20 set: "sos" "(" "formulas" . ")" "." formulas "." "end of list" "."
+
+    ")"  shift, and go to state 33
+
+
+State 21
+
+   23 set: "usable" "(" "clauses" . ")" "." clauses "." "end of list" "."
+
+    ")"  shift, and go to state 34
+
+
+State 22
+
+   21 set: "usable" "(" "formulas" . ")" "." formulas "." "end of list" "."
+
+    ")"  shift, and go to state 35
+
+
+State 23
+
+    7 declarations: declarations "." declaration .
+
+    $default  reduce using rule 7 (declarations)
+
+
+State 24
+
+    3 file: declarations "." sets .
+   19 sets: sets . "." set
+
+    "."  shift, and go to state 14
+
+    $default  reduce using rule 3 (file)
+
+
+State 25
+
+   19 sets: sets "." set .
+
+    $default  reduce using rule 19 (sets)
+
+
+State 26
+
+   70 modal_arg: "identifier" .
+
+    $default  reduce using rule 70 (modal_arg)
+
+
+State 27
+
+   69 modal_arg: "number" .
+
+    $default  reduce using rule 69 (modal_arg)
+
+
+State 28
+
+   13 option: "box operator" "," . axioms
+
+    "identifier"  shift, and go to state 36
+
+    $default  reduce using rule 15 (axioms)
+
+    axioms  go to state 37
+
+
+State 29
+
+   12 option: "box operator" modal_arg . "," axioms
+
+    ","  shift, and go to state 38
+
+
+State 30
+
+   10 option: "identifier" "," . "number"
+   11       | "identifier" "," . propositions_list
+
+    "identifier"  shift, and go to state 39
+    "number"      shift, and go to state 40
+
+    propositions_list  go to state 41
+
+
+State 31
+
+    8 declaration: "set option command" "(" option ")" .
+
+    $default  reduce using rule 8 (declaration)
+
+
+State 32
+
+   22 set: "sos" "(" "clauses" ")" . "." clauses "." "end of list" "."
+
+    "."  shift, and go to state 42
+
+
+State 33
+
+   20 set: "sos" "(" "formulas" ")" . "." formulas "." "end of list" "."
+
+    "."  shift, and go to state 43
+
+
+State 34
+
+   23 set: "usable" "(" "clauses" ")" . "." clauses "." "end of list" "."
+
+    "."  shift, and go to state 44
+
+
+State 35
+
+   21 set: "usable" "(" "formulas" ")" . "." formulas "." "end of list" "."
+
+    "."  shift, and go to state 45
+
+
+State 36
+
+   16 axioms: "identifier" .
+   17       | "identifier" . "," axioms
+
+    ","  shift, and go to state 46
+
+    $default  reduce using rule 16 (axioms)
+
+
+State 37
+
+   13 option: "box operator" "," axioms .
+
+    $default  reduce using rule 13 (option)
+
+
+State 38
+
+   12 option: "box operator" modal_arg "," . axioms
+
+    "identifier"  shift, and go to state 36
+
+    $default  reduce using rule 15 (axioms)
+
+    axioms  go to state 47
+
+
+State 39
+
+   67 propositions_list: "identifier" .
+
+    $default  reduce using rule 67 (propositions_list)
+
+
+State 40
+
+   10 option: "identifier" "," "number" .
+
+    $default  reduce using rule 10 (option)
+
+
+State 41
+
+   11 option: "identifier" "," propositions_list .
+   68 propositions_list: propositions_list . "," "identifier"
+
+    ","  shift, and go to state 48
+
+    $default  reduce using rule 11 (option)
+
+
+State 42
+
+   22 set: "sos" "(" "clauses" ")" "." . clauses "." "end of list" "."
+
+    error         shift, and go to state 49
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 52
+    TTRUE         shift, and go to state 53
+    "constant"    shift, and go to state 54
+    "("           shift, and go to state 55
+
+    "."  reduce using rule 24 (clauses)
+
+    clauses               go to state 56
+    clause                go to state 57
+    initial_clause        go to state 58
+    literal_clause        go to state 59
+    modal_clause          go to state 60
+    disjunction_literals  go to state 61
+    literal               go to state 62
+    proposition           go to state 63
+
+
+State 43
+
+   20 set: "sos" "(" "formulas" ")" "." . formulas "." "end of list" "."
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    "."  reduce using rule 47 (formulas)
+
+    formulas     go to state 73
+    formula      go to state 74
+    proposition  go to state 75
+
+
+State 44
+
+   23 set: "usable" "(" "clauses" ")" "." . clauses "." "end of list" "."
+
+    error         shift, and go to state 49
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 52
+    TTRUE         shift, and go to state 53
+    "constant"    shift, and go to state 54
+    "("           shift, and go to state 55
+
+    "."  reduce using rule 24 (clauses)
+
+    clauses               go to state 76
+    clause                go to state 57
+    initial_clause        go to state 58
+    literal_clause        go to state 59
+    modal_clause          go to state 60
+    disjunction_literals  go to state 61
+    literal               go to state 62
+    proposition           go to state 63
+
+
+State 45
+
+   21 set: "usable" "(" "formulas" ")" "." . formulas "." "end of list" "."
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    "."  reduce using rule 47 (formulas)
+
+    formulas     go to state 77
+    formula      go to state 74
+    proposition  go to state 75
+
+
+State 46
+
+   17 axioms: "identifier" "," . axioms
+
+    "identifier"  shift, and go to state 36
+
+    $default  reduce using rule 15 (axioms)
+
+    axioms  go to state 78
+
+
+State 47
+
+   12 option: "box operator" modal_arg "," axioms .
+
+    $default  reduce using rule 12 (option)
+
+
+State 48
+
+   68 propositions_list: propositions_list "," . "identifier"
+
+    "identifier"  shift, and go to state 79
+
+
+State 49
+
+   30 clause: error . "."
+
+    "."  shift, and go to state 80
+
+
+State 50
+
+   46 literal: "negation" . literal
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+
+    literal      go to state 81
+    proposition  go to state 63
+
+
+State 51
+
+   71 proposition: "identifier" .
+
+    $default  reduce using rule 71 (proposition)
+
+
+State 52
+
+   31 initial_clause: TSTART . "implication" disjunction_literals
+   72 proposition: TSTART .
+
+    "implication"  shift, and go to state 82
+
+    "implication"  [reduce using rule 72 (proposition)]
+    $default       reduce using rule 72 (proposition)
+
+
+State 53
+
+   32 literal_clause: TTRUE . "implication" disjunction_literals
+   73 proposition: TTRUE .
+
+    "implication"  shift, and go to state 83
+
+    "implication"  [reduce using rule 73 (proposition)]
+    $default       reduce using rule 73 (proposition)
+
+
+State 54
+
+   74 proposition: "constant" .
+
+    $default  reduce using rule 74 (proposition)
+
+
+State 55
+
+   44 disjunction_literals: "(" . disjunction_literals ")"
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+    "("           shift, and go to state 55
+
+    disjunction_literals  go to state 84
+    literal               go to state 85
+    proposition           go to state 63
+
+
+State 56
+
+   22 set: "sos" "(" "clauses" ")" "." clauses . "." "end of list" "."
+   26 clauses: clauses . "." clause
+
+    "."  shift, and go to state 86
+
+
+State 57
+
+   25 clauses: clause .
+
+    $default  reduce using rule 25 (clauses)
+
+
+State 58
+
+   27 clause: initial_clause .
+
+    $default  reduce using rule 27 (clause)
+
+
+State 59
+
+   28 clause: literal_clause .
+
+    $default  reduce using rule 28 (clause)
+
+
+State 60
+
+   29 clause: modal_clause .
+
+    $default  reduce using rule 29 (clause)
+
+
+State 61
+
+   33 literal_clause: disjunction_literals .
+   42 disjunction_literals: disjunction_literals . "disjunction" literal
+
+    "disjunction"  shift, and go to state 87
+
+    $default  reduce using rule 33 (literal_clause)
+
+
+State 62
+
+   34 modal_clause: literal . "implication" "box operator" modal_arg literal
+   35             | literal . "implication" "box operator" literal
+   36             | literal . "implication" TOBOX modal_arg TCBOX literal
+   37             | literal . "implication" TOBOX TCBOX literal
+   38             | literal . "implication" "diamond operator" modal_arg literal
+   39             | literal . "implication" "diamond operator" literal
+   40             | literal . "implication" TODIA modal_arg TCDIA literal
+   41             | literal . "implication" TODIA TCDIA literal
+   43 disjunction_literals: literal .
+
+    "implication"  shift, and go to state 88
+
+    $default  reduce using rule 43 (disjunction_literals)
+
+
+State 63
+
+   45 literal: proposition .
+
+    $default  reduce using rule 45 (literal)
+
+
+State 64
+
+   66 formula: error .
+
+    $default  reduce using rule 66 (formula)
+
+
+State 65
+
+   55 formula: "negation" . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 89
+    proposition  go to state 75
+
+
+State 66
+
+   61 formula: "diamond operator" . modal_arg formula
+   63        | "diamond operator" . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 90
+    "number"            shift, and go to state 27
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 91
+    modal_arg    go to state 92
+    proposition  go to state 75
+
+
+State 67
+
+   57 formula: "box operator" . modal_arg formula
+   59        | "box operator" . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 90
+    "number"            shift, and go to state 27
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 93
+    modal_arg    go to state 94
+    proposition  go to state 75
+
+
+State 68
+
+   56 formula: TOBOX . modal_arg TCBOX formula
+   58        | TOBOX . TCBOX formula
+
+    TCBOX         shift, and go to state 95
+    "identifier"  shift, and go to state 26
+    "number"      shift, and go to state 27
+
+    modal_arg  go to state 96
+
+
+State 69
+
+   60 formula: TODIA . modal_arg TCDIA formula
+   62        | TODIA . TCDIA formula
+
+    TCDIA         shift, and go to state 97
+    "identifier"  shift, and go to state 26
+    "number"      shift, and go to state 27
+
+    modal_arg  go to state 98
+
+
+State 70
+
+   72 proposition: TSTART .
+
+    $default  reduce using rule 72 (proposition)
+
+
+State 71
+
+   73 proposition: TTRUE .
+
+    $default  reduce using rule 73 (proposition)
+
+
+State 72
+
+   64 formula: "(" . formula ")"
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 99
+    proposition  go to state 75
+
+
+State 73
+
+   20 set: "sos" "(" "formulas" ")" "." formulas . "." "end of list" "."
+   49 formulas: formulas . "." formula
+
+    "."  shift, and go to state 100
+
+
+State 74
+
+   48 formulas: formula .
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+
+    "double implication"  shift, and go to state 101
+    "implication"         shift, and go to state 102
+    "only if"             shift, and go to state 103
+    "disjunction"         shift, and go to state 104
+    "conjunction"         shift, and go to state 105
+
+    $default  reduce using rule 48 (formulas)
+
+
+State 75
+
+   65 formula: proposition .
+
+    $default  reduce using rule 65 (formula)
+
+
+State 76
+
+   23 set: "usable" "(" "clauses" ")" "." clauses . "." "end of list" "."
+   26 clauses: clauses . "." clause
+
+    "."  shift, and go to state 106
+
+
+State 77
+
+   21 set: "usable" "(" "formulas" ")" "." formulas . "." "end of list" "."
+   49 formulas: formulas . "." formula
+
+    "."  shift, and go to state 107
+
+
+State 78
+
+   17 axioms: "identifier" "," axioms .
+
+    $default  reduce using rule 17 (axioms)
+
+
+State 79
+
+   68 propositions_list: propositions_list "," "identifier" .
+
+    $default  reduce using rule 68 (propositions_list)
+
+
+State 80
+
+   30 clause: error "." .
+
+    $default  reduce using rule 30 (clause)
+
+
+State 81
+
+   46 literal: "negation" literal .
+
+    $default  reduce using rule 46 (literal)
+
+
+State 82
+
+   31 initial_clause: TSTART "implication" . disjunction_literals
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+    "("           shift, and go to state 55
+
+    disjunction_literals  go to state 108
+    literal               go to state 85
+    proposition           go to state 63
+
+
+State 83
+
+   32 literal_clause: TTRUE "implication" . disjunction_literals
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+    "("           shift, and go to state 55
+
+    disjunction_literals  go to state 109
+    literal               go to state 85
+    proposition           go to state 63
+
+
+State 84
+
+   42 disjunction_literals: disjunction_literals . "disjunction" literal
+   44                     | "(" disjunction_literals . ")"
+
+    "disjunction"  shift, and go to state 87
+    ")"            shift, and go to state 110
+
+
+State 85
+
+   43 disjunction_literals: literal .
+
+    $default  reduce using rule 43 (disjunction_literals)
+
+
+State 86
+
+   22 set: "sos" "(" "clauses" ")" "." clauses "." . "end of list" "."
+   26 clauses: clauses "." . clause
+
+    error          shift, and go to state 49
+    "negation"     shift, and go to state 50
+    "identifier"   shift, and go to state 51
+    TSTART         shift, and go to state 52
+    TTRUE          shift, and go to state 53
+    "constant"     shift, and go to state 54
+    "end of list"  shift, and go to state 111
+    "("            shift, and go to state 55
+
+    clause                go to state 112
+    initial_clause        go to state 58
+    literal_clause        go to state 59
+    modal_clause          go to state 60
+    disjunction_literals  go to state 61
+    literal               go to state 62
+    proposition           go to state 63
+
+
+State 87
+
+   42 disjunction_literals: disjunction_literals "disjunction" . literal
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+
+    literal      go to state 113
+    proposition  go to state 63
+
+
+State 88
+
+   34 modal_clause: literal "implication" . "box operator" modal_arg literal
+   35             | literal "implication" . "box operator" literal
+   36             | literal "implication" . TOBOX modal_arg TCBOX literal
+   37             | literal "implication" . TOBOX TCBOX literal
+   38             | literal "implication" . "diamond operator" modal_arg literal
+   39             | literal "implication" . "diamond operator" literal
+   40             | literal "implication" . TODIA modal_arg TCDIA literal
+   41             | literal "implication" . TODIA TCDIA literal
+
+    "diamond operator"  shift, and go to state 114
+    "box operator"      shift, and go to state 115
+    TOBOX               shift, and go to state 116
+    TODIA               shift, and go to state 117
+
+
+State 89
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+   55        | "negation" formula .
+
+    $default  reduce using rule 55 (formula)
+
+
+State 90
+
+   70 modal_arg: "identifier" .
+   71 proposition: "identifier" .
+
+    "double implication"  reduce using rule 71 (proposition)
+    "implication"         reduce using rule 71 (proposition)
+    "only if"             reduce using rule 71 (proposition)
+    "disjunction"         reduce using rule 71 (proposition)
+    "conjunction"         reduce using rule 71 (proposition)
+    "."                   reduce using rule 71 (proposition)
+    ")"                   reduce using rule 71 (proposition)
+    $default              reduce using rule 70 (modal_arg)
+
+
+State 91
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+   63        | "diamond operator" formula .
+
+    $default  reduce using rule 63 (formula)
+
+
+State 92
+
+   61 formula: "diamond operator" modal_arg . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 118
+    proposition  go to state 75
+
+
+State 93
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+   59        | "box operator" formula .
+
+    $default  reduce using rule 59 (formula)
+
+
+State 94
+
+   57 formula: "box operator" modal_arg . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 119
+    proposition  go to state 75
+
+
+State 95
+
+   58 formula: TOBOX TCBOX . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 120
+    proposition  go to state 75
+
+
+State 96
+
+   56 formula: TOBOX modal_arg . TCBOX formula
+
+    TCBOX  shift, and go to state 121
+
+
+State 97
+
+   62 formula: TODIA TCDIA . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 122
+    proposition  go to state 75
+
+
+State 98
+
+   60 formula: TODIA modal_arg . TCDIA formula
+
+    TCDIA  shift, and go to state 123
+
+
+State 99
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+   64        | "(" formula . ")"
+
+    "double implication"  shift, and go to state 101
+    "implication"         shift, and go to state 102
+    "only if"             shift, and go to state 103
+    "disjunction"         shift, and go to state 104
+    "conjunction"         shift, and go to state 105
+    ")"                   shift, and go to state 124
+
+
+State 100
+
+   20 set: "sos" "(" "formulas" ")" "." formulas "." . "end of list" "."
+   49 formulas: formulas "." . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "end of list"       shift, and go to state 125
+    "("                 shift, and go to state 72
+
+    formula      go to state 126
+    proposition  go to state 75
+
+
+State 101
+
+   50 formula: formula "double implication" . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 127
+    proposition  go to state 75
+
+
+State 102
+
+   51 formula: formula "implication" . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 128
+    proposition  go to state 75
+
+
+State 103
+
+   52 formula: formula "only if" . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 129
+    proposition  go to state 75
+
+
+State 104
+
+   53 formula: formula "disjunction" . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 130
+    proposition  go to state 75
+
+
+State 105
+
+   54 formula: formula "conjunction" . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 131
+    proposition  go to state 75
+
+
+State 106
+
+   23 set: "usable" "(" "clauses" ")" "." clauses "." . "end of list" "."
+   26 clauses: clauses "." . clause
+
+    error          shift, and go to state 49
+    "negation"     shift, and go to state 50
+    "identifier"   shift, and go to state 51
+    TSTART         shift, and go to state 52
+    TTRUE          shift, and go to state 53
+    "constant"     shift, and go to state 54
+    "end of list"  shift, and go to state 132
+    "("            shift, and go to state 55
+
+    clause                go to state 112
+    initial_clause        go to state 58
+    literal_clause        go to state 59
+    modal_clause          go to state 60
+    disjunction_literals  go to state 61
+    literal               go to state 62
+    proposition           go to state 63
+
+
+State 107
+
+   21 set: "usable" "(" "formulas" ")" "." formulas "." . "end of list" "."
+   49 formulas: formulas "." . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "end of list"       shift, and go to state 133
+    "("                 shift, and go to state 72
+
+    formula      go to state 126
+    proposition  go to state 75
+
+
+State 108
+
+   31 initial_clause: TSTART "implication" disjunction_literals .
+   42 disjunction_literals: disjunction_literals . "disjunction" literal
+
+    "disjunction"  shift, and go to state 87
+
+    $default  reduce using rule 31 (initial_clause)
+
+
+State 109
+
+   32 literal_clause: TTRUE "implication" disjunction_literals .
+   42 disjunction_literals: disjunction_literals . "disjunction" literal
+
+    "disjunction"  shift, and go to state 87
+
+    $default  reduce using rule 32 (literal_clause)
+
+
+State 110
+
+   44 disjunction_literals: "(" disjunction_literals ")" .
+
+    $default  reduce using rule 44 (disjunction_literals)
+
+
+State 111
+
+   22 set: "sos" "(" "clauses" ")" "." clauses "." "end of list" . "."
+
+    "."  shift, and go to state 134
+
+
+State 112
+
+   26 clauses: clauses "." clause .
+
+    $default  reduce using rule 26 (clauses)
+
+
+State 113
+
+   42 disjunction_literals: disjunction_literals "disjunction" literal .
+
+    $default  reduce using rule 42 (disjunction_literals)
+
+
+State 114
+
+   38 modal_clause: literal "implication" "diamond operator" . modal_arg literal
+   39             | literal "implication" "diamond operator" . literal
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 90
+    "number"      shift, and go to state 27
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+
+    literal      go to state 135
+    modal_arg    go to state 136
+    proposition  go to state 63
+
+
+State 115
+
+   34 modal_clause: literal "implication" "box operator" . modal_arg literal
+   35             | literal "implication" "box operator" . literal
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 90
+    "number"      shift, and go to state 27
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+
+    literal      go to state 137
+    modal_arg    go to state 138
+    proposition  go to state 63
+
+
+State 116
+
+   36 modal_clause: literal "implication" TOBOX . modal_arg TCBOX literal
+   37             | literal "implication" TOBOX . TCBOX literal
+
+    TCBOX         shift, and go to state 139
+    "identifier"  shift, and go to state 26
+    "number"      shift, and go to state 27
+
+    modal_arg  go to state 140
+
+
+State 117
+
+   40 modal_clause: literal "implication" TODIA . modal_arg TCDIA literal
+   41             | literal "implication" TODIA . TCDIA literal
+
+    TCDIA         shift, and go to state 141
+    "identifier"  shift, and go to state 26
+    "number"      shift, and go to state 27
+
+    modal_arg  go to state 142
+
+
+State 118
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+   61        | "diamond operator" modal_arg formula .
+
+    $default  reduce using rule 61 (formula)
+
+
+State 119
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+   57        | "box operator" modal_arg formula .
+
+    $default  reduce using rule 57 (formula)
+
+
+State 120
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+   58        | TOBOX TCBOX formula .
+
+    $default  reduce using rule 58 (formula)
+
+
+State 121
+
+   56 formula: TOBOX modal_arg TCBOX . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 143
+    proposition  go to state 75
+
+
+State 122
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+   62        | TODIA TCDIA formula .
+
+    $default  reduce using rule 62 (formula)
+
+
+State 123
+
+   60 formula: TODIA modal_arg TCDIA . formula
+
+    error               shift, and go to state 64
+    "negation"          shift, and go to state 65
+    "diamond operator"  shift, and go to state 66
+    "box operator"      shift, and go to state 67
+    TOBOX               shift, and go to state 68
+    TODIA               shift, and go to state 69
+    "identifier"        shift, and go to state 51
+    TSTART              shift, and go to state 70
+    TTRUE               shift, and go to state 71
+    "constant"          shift, and go to state 54
+    "("                 shift, and go to state 72
+
+    formula      go to state 144
+    proposition  go to state 75
+
+
+State 124
+
+   64 formula: "(" formula ")" .
+
+    $default  reduce using rule 64 (formula)
+
+
+State 125
+
+   20 set: "sos" "(" "formulas" ")" "." formulas "." "end of list" . "."
+
+    "."  shift, and go to state 145
+
+
+State 126
+
+   49 formulas: formulas "." formula .
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+
+    "double implication"  shift, and go to state 101
+    "implication"         shift, and go to state 102
+    "only if"             shift, and go to state 103
+    "disjunction"         shift, and go to state 104
+    "conjunction"         shift, and go to state 105
+
+    $default  reduce using rule 49 (formulas)
+
+
+State 127
+
+   50 formula: formula . "double implication" formula
+   50        | formula "double implication" formula .
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+
+    "implication"  shift, and go to state 102
+    "only if"      shift, and go to state 103
+    "disjunction"  shift, and go to state 104
+    "conjunction"  shift, and go to state 105
+
+    $default  reduce using rule 50 (formula)
+
+
+State 128
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   51        | formula "implication" formula .
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+
+    "only if"      shift, and go to state 103
+    "disjunction"  shift, and go to state 104
+    "conjunction"  shift, and go to state 105
+
+    $default  reduce using rule 51 (formula)
+
+
+State 129
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   52        | formula "only if" formula .
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+
+    "disjunction"  shift, and go to state 104
+    "conjunction"  shift, and go to state 105
+
+    $default  reduce using rule 52 (formula)
+
+
+State 130
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   53        | formula "disjunction" formula .
+   54        | formula . "conjunction" formula
+
+    "conjunction"  shift, and go to state 105
+
+    $default  reduce using rule 53 (formula)
+
+
+State 131
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+   54        | formula "conjunction" formula .
+
+    $default  reduce using rule 54 (formula)
+
+
+State 132
+
+   23 set: "usable" "(" "clauses" ")" "." clauses "." "end of list" . "."
+
+    "."  shift, and go to state 146
+
+
+State 133
+
+   21 set: "usable" "(" "formulas" ")" "." formulas "." "end of list" . "."
+
+    "."  shift, and go to state 147
+
+
+State 134
+
+   22 set: "sos" "(" "clauses" ")" "." clauses "." "end of list" "." .
+
+    $default  reduce using rule 22 (set)
+
+
+State 135
+
+   39 modal_clause: literal "implication" "diamond operator" literal .
+
+    $default  reduce using rule 39 (modal_clause)
+
+
+State 136
+
+   38 modal_clause: literal "implication" "diamond operator" modal_arg . literal
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+
+    literal      go to state 148
+    proposition  go to state 63
+
+
+State 137
+
+   35 modal_clause: literal "implication" "box operator" literal .
+
+    $default  reduce using rule 35 (modal_clause)
+
+
+State 138
+
+   34 modal_clause: literal "implication" "box operator" modal_arg . literal
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+
+    literal      go to state 149
+    proposition  go to state 63
+
+
+State 139
+
+   37 modal_clause: literal "implication" TOBOX TCBOX . literal
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+
+    literal      go to state 150
+    proposition  go to state 63
+
+
+State 140
+
+   36 modal_clause: literal "implication" TOBOX modal_arg . TCBOX literal
+
+    TCBOX  shift, and go to state 151
+
+
+State 141
+
+   41 modal_clause: literal "implication" TODIA TCDIA . literal
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+
+    literal      go to state 152
+    proposition  go to state 63
+
+
+State 142
+
+   40 modal_clause: literal "implication" TODIA modal_arg . TCDIA literal
+
+    TCDIA  shift, and go to state 153
+
+
+State 143
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+   56        | TOBOX modal_arg TCBOX formula .
+
+    $default  reduce using rule 56 (formula)
+
+
+State 144
+
+   50 formula: formula . "double implication" formula
+   51        | formula . "implication" formula
+   52        | formula . "only if" formula
+   53        | formula . "disjunction" formula
+   54        | formula . "conjunction" formula
+   60        | TODIA modal_arg TCDIA formula .
+
+    $default  reduce using rule 60 (formula)
+
+
+State 145
+
+   20 set: "sos" "(" "formulas" ")" "." formulas "." "end of list" "." .
+
+    $default  reduce using rule 20 (set)
+
+
+State 146
+
+   23 set: "usable" "(" "clauses" ")" "." clauses "." "end of list" "." .
+
+    $default  reduce using rule 23 (set)
+
+
+State 147
+
+   21 set: "usable" "(" "formulas" ")" "." formulas "." "end of list" "." .
+
+    $default  reduce using rule 21 (set)
+
+
+State 148
+
+   38 modal_clause: literal "implication" "diamond operator" modal_arg literal .
+
+    $default  reduce using rule 38 (modal_clause)
+
+
+State 149
+
+   34 modal_clause: literal "implication" "box operator" modal_arg literal .
+
+    $default  reduce using rule 34 (modal_clause)
+
+
+State 150
+
+   37 modal_clause: literal "implication" TOBOX TCBOX literal .
+
+    $default  reduce using rule 37 (modal_clause)
+
+
+State 151
+
+   36 modal_clause: literal "implication" TOBOX modal_arg TCBOX . literal
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+
+    literal      go to state 154
+    proposition  go to state 63
+
+
+State 152
+
+   41 modal_clause: literal "implication" TODIA TCDIA literal .
+
+    $default  reduce using rule 41 (modal_clause)
+
+
+State 153
+
+   40 modal_clause: literal "implication" TODIA modal_arg TCDIA . literal
+
+    "negation"    shift, and go to state 50
+    "identifier"  shift, and go to state 51
+    TSTART        shift, and go to state 70
+    TTRUE         shift, and go to state 71
+    "constant"    shift, and go to state 54
+
+    literal      go to state 155
+    proposition  go to state 63
+
+
+State 154
+
+   36 modal_clause: literal "implication" TOBOX modal_arg TCBOX literal .
+
+    $default  reduce using rule 36 (modal_clause)
+
+
+State 155
+
+   40 modal_clause: literal "implication" TODIA modal_arg TCDIA literal .
+
+    $default  reduce using rule 40 (modal_clause)
